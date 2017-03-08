@@ -1,0 +1,9 @@
+<?php
+
+
+echo "<h1>Hell World</h1>"
+require_once('NawiThemePlugin.inc.php');
+
+return new NawiThemePlugin();
+
+?>
