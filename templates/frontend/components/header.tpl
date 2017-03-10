@@ -22,7 +22,7 @@
 <!DOCTYPE html>
 <html lang="{$currentLocale|replace:"_":"-"}" xml:lang="{$currentLocale|replace:"_":"-"}">
 {if !$pageTitleTranslated}{translate|assign:"pageTitleTranslated" key=$pageTitle}{/if}
-{include file="core:frontend/components/headerHead.tpl"}
+ {include file="core:frontend/components/headerHead.tpl"} 
 <body class="pkp_page_{$requestedPage|escape|default:'index'} pkp_op_{$requestedOp|escape|default:'index'}{if $showingLogo} has_site_logo{/if}">
 	<div class="pkp_structure_page">
 		<nav id="accessibility-nav" class="sr-only" role="navigation" aria-labelled-by="accessible-menu-label">
@@ -166,12 +166,14 @@
 					{include file="frontend/components/userLogin.tpl"}
 				</div>
 				
-				<img src="{$baseUrl}/templates/images/structure/edcom.png" alt="{$applicationName|escape}" title="{$applicationName|escape}" />
+				<img src="{$baseUrl}/templates/images/structure/logo_edcom.png" alt="{$applicationName|escape}" title="{$applicationName|escape}" />
 
 				<div class="redes-sociales">
-					<a href="">Enlace 1</a>
-					<a href="">Enlace 2</a>
-					<a href="">Enlace 3</a>	
+					
+
+					<span class="icon-google-with-circle"></span>
+					<span class="icon-instagram-with-circle"></span>
+					<span class="icon-facebook-with-circle"></span>
 
 				</div>
 

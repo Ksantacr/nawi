@@ -8,7 +8,7 @@
  * User login form.
  *
  *}
- <form class="pkp_form login" id="login" method="post" action="{$loginUrl}">
+	<form class="pkp_form login" id="login" method="post" action="{$loginUrl}">
 		{csrf}
 		<input type="hidden" name="source" value="{$source|strip_unsafe_html|escape}" />
 
@@ -19,16 +19,12 @@
 		{/if}
 
 		<div class="form-group">
-			<label for="login-username">
-				{translate key="user.username"}
-			</label>
+			
 			<input type="text" name="username" class="form-control" id="login-username" placeholder="{translate key='user.username'}" value="{$username|escape}" maxlenght="32" required>
 		</div>
 
 		<div class="form-group">
-			<label for="login-password">
-				{translate key="user.password"}
-			</label>
+			
 			<input type="password" name="password" class="form-control" id="login-password" placeholder="{translate key='user.password'}" password="true" maxlength="32" required="$passwordRequired">
 		</div>
 

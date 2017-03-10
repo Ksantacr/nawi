@@ -6,7 +6,7 @@ class NawiThemePlugin extends ThemePlugin {
 
 	public function init(){
 		$this->setParent('bootstrapthreethemeplugin');
-		$this->addStyle('my-custom-style', 'styles/nawi.css');
+		$this->addStyle('stylesheet', 'styles/nawi.css');
 	}
 	function getDisplayName(){
 		return __('plugins.themes.nawi.name');

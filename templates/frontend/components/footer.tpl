@@ -25,7 +25,7 @@
 	{/if}
   </div><!-- pkp_structure_content -->
 
-  <footer class="footer" role="contentinfo">
+  <!-- <footer class="footer" role="contentinfo">
 
   	<div class="container">
 
@@ -45,9 +45,9 @@
     			</a>
     		</div>
 
-      </div> <!-- .row -->
-  	</div><!-- .container -->
-  </footer>
+      </div> --> <!-- .row -->
+  	<!--</div>--><!-- .container -->
+  <!--</footer>-->
 </div><!-- pkp_structure_page -->
 
 {load_script context="frontend" scripts=$scripts}
