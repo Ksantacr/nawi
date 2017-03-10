@@ -1,14 +1,17 @@
 {**
  * templates/frontend/pages/userLogin.tpl
  *
- * Copyright (c) 2014-2016 Simon Fraser University Library
- * Copyright (c) 2000-2016 John Willinsky
- * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING..
  *
  * User login form.
  *
  *}
-	<form class="pkp_form login" id="login" method="post" action="{$loginUrl}">
+ <!-- <p>{$loginUrl}</p>
+ <p>{$baseUrl}</p>
+ <p>{$registerUrl}</p> -->
+ 
+	<!--<form class="pkp_form login" id="login" method="post" action="{$loginUrl}">-->
+	<form class="pkp_form login" id="login" method="post" action="{url page="login" op="signIn"}">
 		{csrf}
 		<input type="hidden" name="source" value="{$source|strip_unsafe_html|escape}" />
 

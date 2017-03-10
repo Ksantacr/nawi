@@ -1,8 +1,7 @@
 {**
  * templates/frontend/pages/userLogin.tpl
  *
- * Copyright (c) 2014-2016 Simon Fraser University Library
- * Copyright (c) 2000-2016 John Willinsky
+ * 
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * User login form.
@@ -22,7 +21,9 @@
 			{translate key=$loginMessage}
 		</div>
 	{/if}
-
+<p>{$loginUrl}</p>
+<p>{$baseUrl}</p>
+ <p>{$registerUrl}</p>
 	<form class="pkp_form login" id="login" method="post" action="{$loginUrl}">
 		{csrf}
 		<input type="hidden" name="source" value="{$source|strip_unsafe_html|escape}" />
