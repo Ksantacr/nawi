@@ -20,7 +20,7 @@
 <!DOCTYPE html>
 <html lang="{$currentLocale|replace:"_":"-"}" xml:lang="{$currentLocale|replace:"_":"-"}">
 {if !$pageTitleTranslated}{translate|assign:"pageTitleTranslated" key=$pageTitle}{/if}
- {include file="core:frontend/components/headerHead2.tpl"} 
+ {include file="core:frontend/components/headerHead.tpl"} 
 <body class="pkp_page_{$requestedPage|escape|default:'index'} pkp_op_{$requestedOp|escape|default:'index'}{if $showingLogo} has_site_logo{/if}">
 	<div class="pkp_structure_page">
 		<nav id="accessibility-nav" class="sr-only" role="navigation" aria-labelled-by="accessible-menu-label">
