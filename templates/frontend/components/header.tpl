@@ -20,7 +20,7 @@
 <!DOCTYPE html>
 <html lang="{$currentLocale|replace:"_":"-"}" xml:lang="{$currentLocale|replace:"_":"-"}">
 {if !$pageTitleTranslated}{translate|assign:"pageTitleTranslated" key=$pageTitle}{/if}
- {include file="core:frontend/components/headerHead.tpl"} 
+ {include file="core:frontend/components/headerHead2.tpl"} 
 <body class="pkp_page_{$requestedPage|escape|default:'index'} pkp_op_{$requestedOp|escape|default:'index'}{if $showingLogo} has_site_logo{/if}">
 	<div class="pkp_structure_page">
 		<nav id="accessibility-nav" class="sr-only" role="navigation" aria-labelled-by="accessible-menu-label">
@@ -37,7 +37,7 @@
 		{* Header *}
 		<header class="navbar navbar-default" id="headerNavigationContainer" role="banner">
 
-			{* User profile, login, etc, navigation menu*}
+			<!-- {* User profile, login, etc, navigation menu*}
 			<div class="container-fluid">
 				<div class="row">
 					<ul id="navigationUser" class="nav nav-pills tab-list pull-right" role="navigation" aria-label="{translate|escape key="common.navigation.user"}">
@@ -93,8 +93,8 @@
 							<li><a href="{url router=$smarty.const.ROUTE_PAGE page="login"}">{translate key="navigation.login"}</a></li>
 						{/if}
 					</ul>
-				</div><!-- .row -->
-			</div><!-- .container-fluid -->
+				</div>--><!-- .row -->
+			<!--</div>--><!-- .container-fluid -->
 
 			<div class="container-fluid">
 
@@ -160,9 +160,9 @@
 			<div class="container-fluid">
 
 
-				<div class="pull-md-right">
-					{include file="frontend/components/userLogin.tpl"}
-				</div>
+				<!-- <div class="pull-md-right">
+				</div> -->
+				{include file="frontend/components/userLogin.tpl"}
 				
 				<img src="{$baseUrl}/templates/images/structure/logo_edcom.png" alt="{$applicationName|escape}" title="{$applicationName|escape}" />
 
