@@ -164,7 +164,7 @@
 				</div> -->
 				{include file="frontend/components/userLogin.tpl"}
 				
-				<img src="{$baseUrl}/templates/images/structure/logo_edcom.png" alt="{$applicationName|escape}" title="{$applicationName|escape}" />
+				<img src="{$baseUrl}/plugins/themes/nawi/images/logo_edcom.png" alt="{$applicationName|escape}" title="{$applicationName|escape}" />
 
 				<div class="redes-sociales">
 					
