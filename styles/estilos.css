@@ -1,5 +1,7 @@
 
 /*  #009fe3 */
+/*  #b5daf3 */
+/** #0099ee*/
 @font-face {
   font-family: 'socialfont';
   src:  url('fonts/socialfont.eot?b4h316');
@@ -67,7 +69,6 @@ padding: 0;
 .footer{
 	width: 100%;
 }
-
 header.navbar {
 
 	background-color: #f6f6f5;
@@ -90,14 +91,13 @@ header.navbar {
 	min-height: 100vh;
 	min-width: 200px;
 
-	width: 27%;
+	width: 25.3%;
 
 	-ms-align-items: center;
 	/*align-items: center;*/
 }
 .site-name img, .site-name a{
-	height: 115px;
-	width: 180px;
+	height: 82px;
 }
 .container-fluid form{
 	display: -webkit-flex;
@@ -111,13 +111,37 @@ header.navbar {
 	-ms-flex-direction: column;
 	-o-flex-direction: column;
 	flex-direction: column;
+
+	width: 185px;
 }
+
 .container-fluid form div{
-	max-width: 70%;
+	margin-bottom: 5px;
+	text-align: center;
+}
+.container-fluid input[type="password"],
+.container-fluid input[type="text"]{
+	border:1px solid #ccc;
+	border-radius: 0px;
+	width: 145px;
+	height: 33px;
+	margin:0 auto;
 }
 header .container-fluid{
 	padding: 0;
 	margin: 0;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
 }
 #main-navigation{
 	display: -webkit-flex;
@@ -131,14 +155,151 @@ header .container-fluid{
 	-o-flex-direction: column;
 	flex-direction: column;
 	text-align: center;
-	width: 100%;
+	margin-bottom: 15%;
+	width: 185px;
 }
 ul#main-navigation >li{
 
-	border-bottom:1px solid #009fe3;
+	border-bottom:1px solid #0099ee;
 
 }
 ul#main-navigation >li:nth-child(1){
 
-	border-top:1px solid #009fe3;
+	border-top:1px solid #0099ee;
+}
+.navbar-nav > li > a{
+	padding: 10px 0;
+	text-transform: uppercase;
+	font-size:12px;
+}
+.navbar-brand{
+	float: none;
+}
+
+.btn-primary{
+	/*background-color: #0099ee;*/
+	border-radius: 0px;
+	padding: 0;
+	width: 145px;
+	padding: 2px 0;
+}
+.btn-default{
+	border-radius: 0px;
+	padding: 0px;
+	background-color: transparent;
+	border-color: transparent;
+}
+.btn-default:hover{
+	border-radius: 0px;
+	padding: 0px;
+	background-color: transparent;
+	border-color: transparent;
+	text-decoration: underline;
+}
+.social-nawi{
+	
+}
+.social-nawi a{
+	color:#333;
+	text-decoration: none;
+	font-size: 21px;
+}
+.social-nawi a:hover{
+	color:#0099ee;
+}
+.logo-edcom{
+	max-width:220px;
+	margin: 15% auto;
+}
+.container > main{
+	width: 100%;
+}
+/*div.homepage-image{
+	position: relative;
+}
+div.homepage-image img{
+	position: absolute;
+	clip: rect(0px, 100vh, 30vh, 0px);
+}*/
+.page_index_journal{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+}
+.navbar-nawi{
+	padding: 0;
+	margin: 0;
+	border:1px solid #cf0274;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+/*.navbar-nawi .form-group,.navbar-nawi button{
+	border:1px solid blue;
+}*/
+.navbar-nawi .form-group input{
+	border-radius: 0px;
+	border-right: 1px solid #cf0274;
+	padding: 0;
+	height: 30px;
+}
+.navbar-nawi .form-group input:focus{
+	border-color: transparent;
+	box-shadow:none;
+}
+.navbar-nawi button,.navbar-nawi button:hover{
+	padding: 4px 11px;
+
+}
+.navbar-nawi button span{
+	color:#cf0274;
+}
+.popular{
+	-ms-align-self: flex-start;
+	align-self: flex-start;
+}
+.imagen-principal figcaption{
+	display: none;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	position: absolute;
+	
+	width: 100%;
+	background-color: rgba(0,0,0,0.75);
+	color:white;
+	padding: 20px;
+
+	display: block;
+	bottom:0px;
+
+}
+.imagen-principal{
+	overflow: hidden;
+	position: relative;
+}
+
+.imagen-principal:hover figcaption{
+	display:none;
+}
+.pkp_page_index .journal-description{
+	margin-bottom: 0;
+}
+.current_issue header{
+	margin:0;
+	padding: 0;
+}
+.nawi-hide{
+	display: none;
 }

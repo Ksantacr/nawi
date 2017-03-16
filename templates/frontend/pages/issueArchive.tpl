@@ -15,7 +15,6 @@
 	{/if}
 {/capture}
 {include file="frontend/components/header.tpl" pageTitleTranslated=$pageTitle}
-
 <div id="main-content" class="page page_issue_archive">
 	{include file="frontend/components/breadcrumbs.tpl" currentTitle=$pageTitle}
 

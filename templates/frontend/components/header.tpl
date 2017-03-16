@@ -23,7 +23,7 @@
  {include file="core:frontend/components/headerHead.tpl"} 
 <body class="pkp_page_{$requestedPage|escape|default:'index'} pkp_op_{$requestedOp|escape|default:'index'}{if $showingLogo} has_site_logo{/if}">
 	<div class="pkp_structure_page">
-		<nav id="accessibility-nav" class="sr-only" role="navigation" aria-labelled-by="accessible-menu-label">
+		<!-- <nav id="accessibility-nav" class="sr-only" role="navigation" aria-labelled-by="accessible-menu-label">
 			<h2 id="accessible-menu-label">
 				{translate|escape key="plugins.themes.bootstrap3.accessible_menu.label"}
 			</h2>
@@ -32,12 +32,12 @@
 			  <li><a href="#main-content">{translate|escape key="plugins.themes.bootstrap3.accessible_menu.main_content"}</a></li>
 			  <li><a href="#sidebar">{translate|escape key="plugins.themes.bootstrap3.accessible_menu.sidebar"}</a></li>
 			</ul>
-		</nav>
+		</nav> -->
 
 		{* Header *}
 		<header class="navbar navbar-default" id="headerNavigationContainer" role="banner">
 
-			<!-- {* User profile, login, etc, navigation menu*}
+			 {* User profile, login, etc, navigation menu*}
 			<div class="container-fluid">
 				<div class="row">
 					<ul id="navigationUser" class="nav nav-pills tab-list pull-right" role="navigation" aria-label="{translate|escape key="common.navigation.user"}">
@@ -86,15 +86,15 @@
 									{/if}
 								</ul>
 							</li>
-						{else}
-							{if !$hideRegisterLink}
+						 {*else*} 
+							<!--{if !$hideRegisterLink}
 								<li><a href="{url router=$smarty.const.ROUTE_PAGE page="user" op="register"}">{translate key="navigation.register"}</a></li>
 							{/if}
-							<li><a href="{url router=$smarty.const.ROUTE_PAGE page="login"}">{translate key="navigation.login"}</a></li>
+							<li><a href="{url router=$smarty.const.ROUTE_PAGE page="login"}">{translate key="navigation.login"}</a></li>-->
 						{/if}
 					</ul>
-				</div>--><!-- .row -->
-			<!--</div>--><!-- .container-fluid -->
+				</div><!-- .row -->
+			</div><!-- .container-fluid -->
 
 			<div class="container-fluid">
 
@@ -158,26 +158,29 @@
 
 			</div><!-- .pkp_head_wrapper -->
 			<div class="container-fluid">
-
-
 				<!-- <div class="pull-md-right">
 				</div> -->
 				{include file="frontend/components/userLogin.tpl"}
-				
-				<img src="{$baseUrl}/plugins/themes/nawi/images/logo_edcom.png" alt="{$applicationName|escape}" title="{$applicationName|escape}" />
+			</div>
 
-				<div class="redes-sociales">
-					
-
-					<span class="icon-google-with-circle"></span>
-					<span class="icon-instagram-with-circle"></span>
-					<span class="icon-facebook-with-circle"></span>
-
+			<div class="container-fluid">
+				<img src="{$baseUrl}/plugins/themes/nawi/images/logo_edcom.png" alt="{$applicationName|escape}" title="{$applicationName|escape}" class="logo-edcom"/>
+			</div>
+			<div class="container-fluid">
+				<div class="social-nawi">
+					<a href="#">
+						<span class="icon-facebook-with-circle"></span>	
+					</a>
+					<a href="#">
+						<span class="icon-google-with-circle"></span>	
+					</a>
+					<a href="#">
+						<span class="icon-instagram-with-circle"></span>	
+					</a>
 				</div>
 
 			</div>
 		</header><!-- .pkp_structure_head -->
-
 		{* Wrapper for page content and sidebars *}
 		<div class="pkp_structure_content container">
 			<main class="pkp_structure_main col-xs-12 col-sm-10 col-md-8" role="main">

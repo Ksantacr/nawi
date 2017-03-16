@@ -30,29 +30,28 @@
 			
 			<input type="password" name="password" class="form-control" id="login-password" placeholder="{translate key='user.password'}" password="true" maxlength="32" required="$passwordRequired">
 		</div>
-
-		<div class="form-group">
-			<a href="{url page="login" op="lostPassword"}">
-				{translate key="user.login.forgotPassword"}
-			</a>
-		</div>
-
-		<div class="checkbox">
-			<label>
-				<input type="checkbox" name="remember" id="remember" value="1" checked="$remember"> {translate key="user.login.rememberUsernameAndPassword"}
-			</label>
-		</div>
-
-		<div class="buttons">
+		<div class="login">
 			<button type="submit" class="btn btn-primary">
 				{translate key="user.login"}
 			</button>
+		</div>
 
+		<div class="">
 			{if !$disableUserReg}
 				{url|assign:registerUrl page="user" op="register" source=$source}
 				<a class="btn btn-default register-button" href="{$registerUrl}" role="button">
 					{translate key="user.login.registerNewAccount"}
 				</a>
 			{/if}
+
+			<a href="{url page="login" op="lostPassword"}">
+				{translate key="user.login.forgotPassword"}
+			</a>
 		</div>
+		<!-- <div class="checkbox">
+			<label>
+				<input type="checkbox" name="remember" id="remember" value="1" checked="$remember"> {translate key="user.login.rememberUsernameAndPassword"}
+			</label>
+		</div> -->
+		
 	</form>

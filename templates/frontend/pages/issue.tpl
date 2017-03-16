@@ -15,7 +15,6 @@
 {include file="frontend/components/header.tpl" pageTitleTranslated=$issueIdentification}
 
 <div id="main-content" class="page page_issue">
-
 	{* Display a message if no current issue exists *}
 	{if !$issue}
 		{include file="frontend/components/breadcrumbs_issue.tpl" currentTitleKey="current.noCurrentIssue"}

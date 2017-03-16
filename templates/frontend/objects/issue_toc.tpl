@@ -78,7 +78,6 @@
 			</div>
 		{/if}
 	</div>
-
 	{* Full-issue galleys *}
 	{if $issueGalleys && ($hasAccess || $showGalleyLinks)}
 		<div class="galleys">
@@ -95,8 +94,38 @@
 		</div>
 	{/if}
 
+<div class="div">
+
+	<ul class="nav nav-tabs">
+		{foreach name=sections from=$publishedArticles item=section}
+		<li>
+			<a href="#{$section.title|escape}" data-toggle="tab">{$section.title|escape}</a>
+		</li>
+		{/foreach}
+	</ul>
+
+	<div class="tab-content">
+		{foreach name=sections from=$publishedArticles item=section}
+		
+		<div class="tab-pane fade" id="{$section.title|escape}">
+<div class="media-list">
+			{foreach from=$section.articles item=article}
+				
+				{include file="frontend/objects/article_summary.tpl"}
+
+			{/foreach}
+		</div>
+			<p>Fin {$section.title|escape}</p>
+		</div>
+
+		{/foreach}
+	</div>
+
+
+</div>
+
 	{* Articles *}
-	<div class="sections">
+	<div class="sections nawi-hide">
 		{foreach name=sections from=$publishedArticles item=section}
 			<section class="section">
 				{if $section.articles}

@@ -18,13 +18,38 @@
  *}
 {include file="frontend/components/header.tpl" pageTitleTranslated=$currentJournal->getLocalizedName()}
 
+
 <div id="main-content" class="page_index_journal" role="content">
+
+	<!-- <h1>
+		{translate key="announcement.announcements"}
+	</h1> -->
+	<h2 class="popular">MÁS POPULARES</h2>
+
+	
 
 	{call_hook name="Templates::Index::journal"}
 
 	{if $homepageImage}
-		<div class="homepage-image">
+		<!-- <div class="homepage-image">
 			<img class="img-responsive" src="{$publicFilesDir}/{$homepageImage.uploadName|escape:"url"}" alt="{$homepageImageAltText|escape}">
+			<p>Descripción de la imagen</p>
+		</div> -->
+
+		<div class="homepage-image">
+			
+			<figure class="imagen-principal">
+				
+				<img class="img-responsive" src="{$publicFilesDir}/{$homepageImage.uploadName|escape:"url"}" alt="{$homepageImageAltText|escape}">
+
+				<figcaption>
+					
+					<h3>Titulo de la descripcion</h3>
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores aliquam cum minima, illum vero tempora blanditiis esse labore recusandae non ullam, iure. Rem eligendi ullam sapiente modi beatae minima. Esse!</figcaption>
+
+			</figure>
+
 		</div>
 	{/if}
 
@@ -53,7 +78,6 @@
 		</section>
 	{/if}
 
-
 	{* Latest issue *}
 	{if $issue}
 		<section class="current_issue">
@@ -72,7 +96,6 @@
 			</a>
 		</section>
 	{/if}
-
 	{* Additional Homepage Content *}
 	{if $additionalHomeContent}
 		<section class="additional_content">
@@ -81,4 +104,13 @@
 	{/if}
 </div><!-- .page -->
 
+{* Search form *}
+	{if !$noContextsConfigured}
+		<!-- <div class="pull-md-right"> -->
+		{include file="frontend/components/searchForm_simple.tpl"}
+		<!-- </div> -->
+	{/if}
+
+
 {include file="frontend/components/footer.tpl"}
+

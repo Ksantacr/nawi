@@ -81,7 +81,6 @@
 			{/if}
 		{/if}
 	</div>
-
 </div><!-- .page -->
 
 {include file="frontend/components/footer.tpl"}
