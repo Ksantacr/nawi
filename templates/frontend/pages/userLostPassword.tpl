@@ -11,7 +11,7 @@
 
 <div id="main-content" class="page page_lost_password">
 
-	{include file="frontend/components/breadcrumbs.tpl" currentTitleKey="user.login"}
+	{*include file="frontend/components/breadcrumbs.tpl" currentTitleKey="user.login"*}
 
 	<div class="alert alert-info" role="alert">
 		{translate key="user.login.resetPasswordInstructions"}

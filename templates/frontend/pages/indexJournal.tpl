@@ -24,7 +24,7 @@
 	<!-- <h1>
 		{translate key="announcement.announcements"}
 	</h1> -->
-	<h2 class="popular">MÁS POPULARES</h2>
+	<h2 class="popular">Más populares</h2>
 
 	
 
@@ -44,7 +44,7 @@
 
 				<figcaption>
 					
-					<h3>Titulo de la descripcion</h3>
+					<h3>Título fijo</h3>
 
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores aliquam cum minima, illum vero tempora blanditiis esse labore recusandae non ullam, iure. Rem eligendi ullam sapiente modi beatae minima. Esse!</figcaption>
 
@@ -81,21 +81,23 @@
 	{* Latest issue *}
 	{if $issue}
 		<section class="current_issue">
-			<header class="page-header">
+			<!-- <header class="page-header">
 				<h2>
-					{translate key="journal.currentIssue"}
+					{*translate key="journal.currentIssue"*}
 				</h2>
-			</header>
+			</header> -->
 			<p class="current_issue_title lead">
 				{$issue->getIssueIdentification()|strip_unsafe_html}
 			</p>
 			{include file="frontend/objects/issue_toc.tpl"}
-			<a href="{url router=$smarty.const.ROUTE_PAGE page="issue" op="archive"}" class="btn btn-primary read-more">
+		</section>
+	{/if}
+	{*<div class="view_all_issue">
+		<a href="{url router=$smarty.const.ROUTE_PAGE page="issue" op="archive"}" class="btn btn-primary read-more">
 				{translate key="journal.viewAllIssues"}
 				<span class="glyphicon glyphicon-chevron-right"></span>
 			</a>
-		</section>
-	{/if}
+	</div>*}
 	{* Additional Homepage Content *}
 	{if $additionalHomeContent}
 		<section class="additional_content">
@@ -113,4 +115,3 @@
 
 
 {include file="frontend/components/footer.tpl"}
-

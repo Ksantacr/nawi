@@ -44,17 +44,33 @@
 			{/if}
 
 			{* Page numbers for this article *}
-			{if $article->getPages()}
+			<!--{if $article->getPages()}
 				<p class="pages">
 					{$article->getPages()|escape}
 				</p>
-			{/if}
+			{/if}-->
 
-			<div class="btn-group" role="group">
+			{*<div class="btn-group" role="group">
 				{foreach from=$article->getGalleys() item=galley}
 					{include file="frontend/objects/galley_link.tpl" parent=$article}
 				{/foreach}
-			</div>
+			</div>*}
+
+
+			<!-- Archivos a descargar -->
+			{if $hasAccess}
+			<ul class="galleys_links">
+				{foreach from=$article->getGalleys() item=galley}
+					<li>
+						{assign var="hasArticleAccess" value=$hasAccess}
+						{if ($article->getAccessStatus() == $smarty.const.ARTICLE_ACCESS_OPEN)}
+							{assign var="hasArticleAccess" value=1}
+						{/if}
+						{include file="frontend/objects/galley_link.tpl" parent=$article hasAccess=$hasArticleAccess}
+					</li>
+				{/foreach}
+			</ul>
+	{/if}
 		{/if}
 	</div>
 

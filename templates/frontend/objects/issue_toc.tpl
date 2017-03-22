@@ -12,7 +12,7 @@
  * @uses $hasAccess bool Can this user access galleys for this context?
  * @uses $showGalleyLinks bool Show galley links to users without access?
  *}
-<div class="issue-toc">
+<div class="issue-toc nawi-revista">
 
 	{* Indicate if this is only a preview *}
 	{if !$issue->getPublished()}
@@ -20,26 +20,40 @@
 	{/if}
 
 	{* Issue introduction area above articles *}
+
+
+<div class="nawi-tabs">
+	<!-- Categorías de los artículos publicados-->
+	<ul class="nav nav-tabs">
+		{foreach name=sections from=$publishedArticles item=section}
+		<li>
+			<a href="#{$section.title|escape}" data-toggle="tab">{$section.title|escape}</a>
+		</li>
+		{/foreach}
+	</ul>
+	<!--Fin categorías-->
+</div>
+
 	<div class="heading">
 
 		{* Issue cover image and description*}
 		{assign var=issueCover value=$issue->getCoverImage()}
 		{if $issueCover}
-			<div class="thumbnail">
+			<div class="nawi-portada">
 				<a class="cover" href="{url op="view" page="issue" path=$issue->getBestIssueId()}">
 					<img class="img-responsive" src="{$coverImagePath|escape}{$issueCover|escape}"{if $issue->getCoverImageAltText() != ''} alt="{$issue->getCoverImageAltText()|escape}"{/if}>
 				</a>
-				{if $issue->hasDescription()}
+				{*{if $issue->hasDescription()}
 					<div class="description">
 						{$issue->getLocalizedDescription()|strip_unsafe_html}
 					</div>
-				{/if}
+				{/if}*}
 			</div>
 
-		{elseif $issue->hasDescription()}
-			<div class="description">
+		{*elseif $issue->hasDescription()*}
+			{*<div class="description">
 				{$issue->getLocalizedDescription()|strip_unsafe_html}
-			</div>
+			</div>*}
 		{/if}
 
 		{* PUb IDs (eg - DOI) *}
@@ -67,19 +81,18 @@
 				</div>
 			{/if}
 		{/foreach}
-
 		{* Published date *}
-		{if $issue->getDatePublished()}
-			<div class="published">
+		{* if $issue->getDatePublished() *}
+			{*<div class="published">
 				<strong>
 					{translate key="submissions.published"}:
 				</strong>
 				{$issue->getDatePublished()|date_format:$dateFormatShort}
-			</div>
-		{/if}
+			</div>*}
+		{* /if *}
 	</div>
 	{* Full-issue galleys *}
-	{if $issueGalleys && ($hasAccess || $showGalleyLinks)}
+	{*{if $issueGalleys && ($hasAccess || $showGalleyLinks)}
 		<div class="galleys">
 			<div class="page-header">
 				<h2>
@@ -92,40 +105,29 @@
 				{/foreach}
 			</div>
 		</div>
-	{/if}
+	{/if}*}
 
 <div class="div">
-
-	<ul class="nav nav-tabs">
-		{foreach name=sections from=$publishedArticles item=section}
-		<li>
-			<a href="#{$section.title|escape}" data-toggle="tab">{$section.title|escape}</a>
-		</li>
-		{/foreach}
-	</ul>
-
-	<div class="tab-content">
+	<!-- Contenido de las categorías (Artículos)-->
+	<div class="tab-content" id="jfs">
 		{foreach name=sections from=$publishedArticles item=section}
 		
 		<div class="tab-pane fade" id="{$section.title|escape}">
-<div class="media-list">
-			{foreach from=$section.articles item=article}
-				
-				{include file="frontend/objects/article_summary.tpl"}
+			<div class="media-list">
+				{foreach from=$section.articles item=article}
+							
+					{include file="frontend/objects/article_summary.tpl"}
 
-			{/foreach}
-		</div>
-			<p>Fin {$section.title|escape}</p>
+				{/foreach}
+			</div>
 		</div>
 
 		{/foreach}
 	</div>
-
-
 </div>
 
 	{* Articles *}
-	<div class="sections nawi-hide">
+	{*<div class="sections">
 		{foreach name=sections from=$publishedArticles item=section}
 			<section class="section">
 				{if $section.articles}
@@ -144,5 +146,6 @@
 				{/if}
 			</section>
 		{/foreach}
-	</div><!-- .sections -->
+
+	</div><!-- .sections -->*}
 </div><!-- .issue-toc -->

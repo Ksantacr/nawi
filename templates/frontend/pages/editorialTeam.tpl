@@ -11,7 +11,7 @@
 
 <div id="main-content" class="page page_editorial_team">
 
-	{include file="frontend/components/breadcrumbs.tpl" currentTitleKey="about.editorialTeam"}
+	{*include file="frontend/components/breadcrumbs.tpl" currentTitleKey="about.editorialTeam"*}
 
 	{* Page Title *}
 	<div class="page-header">

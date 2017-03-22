@@ -12,6 +12,18 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
+  url('fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
+  url('fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),
+  url('fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
+  url('fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -238,17 +250,16 @@ div.homepage-image img{
 .navbar-nawi{
 	padding: 0;
 	margin: 0;
-	border:1px solid #cf0274;
 	position: absolute;
-	top: 10px;
-	right: 10px;
+	top: 6px;
+	right: 8px;
 }
 /*.navbar-nawi .form-group,.navbar-nawi button{
 	border:1px solid blue;
 }*/
 .navbar-nawi .form-group input{
 	border-radius: 0px;
-	border-right: 1px solid #cf0274;
+	border: 1px solid #cf0274;
 	padding: 0;
 	height: 30px;
 }
@@ -258,10 +269,15 @@ div.homepage-image img{
 }
 .navbar-nawi button,.navbar-nawi button:hover{
 	padding: 4px 11px;
-
+	border: 1px solid white;
+}
+.navbar-nawi button:hover{
+	/*border: 1px solid #cf0274;*/
+	font-size: 1.1em;
 }
 .navbar-nawi button span{
 	color:#cf0274;
+	font-size: 0.9em;
 }
 .popular{
 	-ms-align-self: flex-start;
@@ -289,10 +305,9 @@ div.homepage-image img{
 	overflow: hidden;
 	position: relative;
 }
-
-.imagen-principal:hover figcaption{
+/*.imagen-principal:hover figcaption{
 	display:none;
-}
+}*/
 .pkp_page_index .journal-description{
 	margin-bottom: 0;
 }
@@ -300,6 +315,108 @@ div.homepage-image img{
 	margin:0;
 	padding: 0;
 }
+.current_issue{
+	margin-bottom: 5%;
+}
+
 .nawi-hide{
 	display: none;
+}
+.popular{
+	font-size: 1em;
+	text-transform: uppercase;
+	color:#cf0274;
+	letter-spacing: 0px;
+	font-weight: bold;
+}
+.nawi-portada{
+
+}
+.nawi-revista{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.nawi-tabs{
+	width: 100%;
+	margin-bottom: 1em;
+}
+.nav-tabs{
+	border:none;
+}
+.nav-tabs > li > a{
+}
+.nav-tabs > li > a{
+	background-color: #eee;
+	border-radius: 0px;
+	border:none;
+	color: #777;
+	text-transform: uppercase;
+	font-size:0.9em;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus{
+	background-color: #0099ee;
+	color:white;
+	border:none;
+}
+.nawi-revista .heading{
+	width: 35%;
+}
+.nawi-revista .heading + div{
+	width: 65%;
+}
+.obj_galley_link{
+	display: inline-block;
+	padding: 0 1em;
+	background-color: #fff;
+	border: 1px solid #007ab2;
+	border-radius: 3px;
+	font-size: 13px;
+	line-height: 28px;
+	color: #007ab2;
+	text-decoration: none;
+}
+.obj_galley_link:before{
+	font-family: FontAwesome;
+	content: "\f0f6";
+	margin-right: 0.25em;
+}
+.obj_galley_link.pdf:before{
+	font-family: FontAwesome;
+	content: "\f1c1";
+	margin-right: 0.25em;
+}
+.obj_galley_link:hover{
+	background-color: #007ab2;
+	color:white;
+	text-decoration: none;
+}
+.galleys_links{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.galleys_links li{
+	display: inline-block;
+	margin-right: 1em;
+}
+h3.media-heading{
+	font-size: 1.1em;
+}
+h3.media-heading a{
+	text-decoration: underline;
+	color:#993366;
+	font-weight: bolder;
+}
+h3.media-heading a:hover{
+	text-decoration: none;
 }

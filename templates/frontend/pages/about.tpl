@@ -11,7 +11,7 @@
 
 <div id="main-content" class="page page_about">
 
-	{include file="frontend/components/breadcrumbs.tpl" currentTitleKey="about.aboutContext"}
+	{*include file="frontend/components/breadcrumbs.tpl" currentTitleKey="about.aboutContext"*}
 
 	{* Page Title *}
 	<div class="page-header">

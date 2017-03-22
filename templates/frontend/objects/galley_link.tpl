@@ -47,11 +47,11 @@
 {/if}
 
 {* Don't be frightened. This is just a link *}
-<a class="galley-link btn btn-default role="button" {$type}{if $restricted} restricted{/if}" href="{url page=$page op="view" path=$parentId|to_array:$galley->getBestGalleyId($currentJournal)}">
+<a class="obj_galley_link {$type}{if $restricted} restricted{/if}" href="{url page=$page op="view" path=$parentId|to_array:$galley->getBestGalleyId()}">
 
 	{* Add some screen reader text to indicate if a galley is restricted *}
 	{if $restricted}
-		<span class="sr-only">
+		<span class="pkp_screen_reader">
 			{if $purchaseArticleEnabled}
 				{translate key="reader.subscriptionOrFeeAccess"}
 			{else}

@@ -12,7 +12,7 @@
 
 <div id="main-content" class="page page_submissions">
 
-	{include file="frontend/components/breadcrumbs.tpl" currentTitleKey="about.submissions"}
+	{*include file="frontend/components/breadcrumbs.tpl" currentTitleKey="about.submissions"*}
 
 	{* Page Title *}
 	<div class="page-header">
