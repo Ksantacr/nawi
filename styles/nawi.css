@@ -2,6 +2,19 @@
 /*  #009fe3 */
 /*  #b5daf3 */
 /** #0099ee*/
+
+/*fuente principal*/
+@font-face {
+  font-family: 'TwCen';
+  src: url('fonts/TwCenMT-Regular.eot?#iefix') format('embedded-opentype'), 
+   url('fonts/TwCenMT-Regular.woff') format('woff'), 
+   url('fonts/TwCenMT-Regular.ttf')  format('truetype'), 
+   url('fonts/TwCenMT-Regular.svg#TwCenMT-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*fin fuente principal*/
+
 @font-face {
   font-family: 'socialfont';
   src:  url('fonts/socialfont.eot?b4h316');
@@ -48,6 +61,11 @@
 }
 .icon-facebook-with-circle:before {
   content: "\e901";
+}
+
+body{
+	font-family: 'TwCen';
+	font-size: 14px;
 }
 
 .pkp_structure_page{
@@ -226,9 +244,15 @@ ul#main-navigation >li:nth-child(1){
 .container > main{
 	width: 100%;
 }
-/*div.homepage-image{
-	position: relative;
+div.homepage-image{
+	width: 100%;
 }
+
+div.homepage-image img{
+	margin: 0 auto;
+}
+
+/*
 div.homepage-image img{
 	position: absolute;
 	clip: rect(0px, 100vh, 30vh, 0px);
