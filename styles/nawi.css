@@ -294,24 +294,25 @@ div.homepage-image img{
 }*/
 .navbar-nawi .form-group input{
 	border-radius: 0px;
-	border: 1px solid #cf0274;
-	padding: 0;
+	border: 1px solid #c06;
+	/*padding: 0;*/
 	height: 30px;
 }
 .navbar-nawi .form-group input:focus{
-	border-color: transparent;
+	border-color: #c39;
 	box-shadow:none;
 }
 .navbar-nawi button,.navbar-nawi button:hover{
 	padding: 4px 11px;
-	border: 1px solid white;
+	border: 1px solid #c06;
+	margin-left: -5px;
 }
 .navbar-nawi button:hover{
 	/*border: 1px solid #cf0274;*/
 	font-size: 1.1em;
 }
 .navbar-nawi button span{
-	color:#cf0274;
+	color:#c06;
 	font-size: 0.9em;
 }
 .popular{
@@ -454,4 +455,22 @@ h3.media-heading a{
 }
 h3.media-heading a:hover{
 	text-decoration: none;
+}
+
+input.buscar{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+input.buscar::-webkit-input-placeholder {
+   font-style: italic;
+}
+input.buscar:-moz-placeholder {
+   font-style: italic;  
+}
+input.buscar::-moz-placeholder {
+   font-style: italic;  
+}
+input.buscar:-ms-input-placeholder {  
+   font-style: italic; 
 }
