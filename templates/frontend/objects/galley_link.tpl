@@ -60,5 +60,5 @@
 		</span>
 	{/if}
 
-	{$galley->getGalleyLabel()|escape}
+	{*$galley->getGalleyLabel()|escape*}
 </a>

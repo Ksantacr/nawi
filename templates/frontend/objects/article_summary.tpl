@@ -29,6 +29,20 @@
 			<a href="{url page="article" op="view" path=$articlePath}">
 				{$article->getLocalizedTitle()|strip_unsafe_html}
 			</a>
+
+			<ul class="galleys_links">
+				{foreach from=$article->getGalleys() item=galley}
+					<li>
+						{assign var="hasArticleAccess" value=$hasAccess}
+						{if ($article->getAccessStatus() == $smarty.const.ARTICLE_ACCESS_OPEN)}
+							{assign var="hasArticleAccess" value=1}
+						{/if}
+						{include file="frontend/objects/galley_link.tpl" parent=$article hasAccess=$hasArticleAccess}
+					</li>
+				{/foreach}
+			</ul>
+
+
 		</h3>
 
 		{if $showAuthor || $article->getPages() || ($article->getDatePublished() && $showDatePublished)}
@@ -66,7 +80,7 @@
 						{if ($article->getAccessStatus() == $smarty.const.ARTICLE_ACCESS_OPEN)}
 							{assign var="hasArticleAccess" value=1}
 						{/if}
-						{include file="frontend/objects/galley_link.tpl" parent=$article hasAccess=$hasArticleAccess}
+						{*include file="frontend/objects/galley_link.tpl" parent=$article hasAccess=$hasArticleAccess*}
 					</li>
 				{/foreach}
 			</ul>
