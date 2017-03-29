@@ -352,7 +352,12 @@ div.homepage-image img{
 	padding: 0;
 }
 .current_issue{
-	margin-bottom: 5%;
+	margin-bottom: 10px;
+}
+p.current_issue_title{
+	color:#0099ee;
+	text-shadow: 1px 1px #aaa,
+	2px 2px #ddd;
 }
 
 .nawi-hide{
@@ -396,6 +401,7 @@ div.homepage-image img{
 	color: #777;
 	text-transform: uppercase;
 	font-size:0.9em;
+	padding: 1em 2em;
 }
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
@@ -405,18 +411,51 @@ div.homepage-image img{
 	border:none;
 }
 .nawi-revista .heading{
+	width: auto;
+	-ms-align-self: flex-start;
+	align-self: flex-start;
+}
+.nawi-revista .heading + div{
+	width: 60%;
+	margin-left: 23px;
+}
+.media-body .media-heading{
+	padding: 0.4em 0.2em 0.1em 0.2em;
+	background-color: #ccc;
+	font-size: 1.05em;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.media-body .authors{
+	font-style: italic;
+}
+.media-heading ul{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+}
+.obj_galley_link{
+	padding: 0 0.4em;
+	color: #007ab2;
+	text-decoration: none;
+}
+.galleys_links li{
+	/*padding:0 2px;*/ 
+}
 	width: 35%;
 }
 .nawi-revista .heading + div{
 	width: 65%;
 }
 .obj_galley_link{
-	display: inline-block;
-	padding: 0 1em;
-	background-color: #fff;
-	border: 1px solid #007ab2;
-	border-radius: 3px;
-	font-size: 13px;
 	line-height: 28px;
 	color: #007ab2;
 	text-decoration: none;
@@ -424,26 +463,48 @@ div.homepage-image img{
 .obj_galley_link:before{
 	font-family: FontAwesome;
 	content: "\f0f6";
-	margin-right: 0.25em;
+	font-size: 1.25em;
+	/*color:#c0392b;*/
 }
 .obj_galley_link.pdf:before{
 	font-family: FontAwesome;
 	content: "\f1c1";
-	margin-right: 0.25em;
+}
+.obj_galley_link.pdf{
+	color:#e74c3c;
+	/*color:red;*/
+}
+.obj_galley_link.file{
+	color:#2980b9;
 }
 .obj_galley_link:hover{
-	background-color: #007ab2;
+	/*background-color: #007ab2;
 	color:white;
-	text-decoration: none;
+	text-decoration: none;*/
+	/*text-shadow: 1px 1px 1px rgba(0,0,0,0.5);*/
+	-webkit-transition:color 0.3s;
+	-moz-transition:color 0.3s;
+	transition: color 0.3s;
+	color:#556;
+}
+.obj_galley_link:hover{
+	/*background-color: #007ab2;
+	color:white;
+	text-decoration: none;*/
+
 }
 .galleys_links{
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
+
+h3.media-heading .galleys_links a{
+	//color:#2980b9;
+	text-decoration: none;
+}
 .galleys_links li{
 	display: inline-block;
-	margin-right: 1em;
 }
 h3.media-heading{
 	font-size: 1.1em;
