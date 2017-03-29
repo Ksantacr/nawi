@@ -128,6 +128,7 @@ header.navbar {
 }
 .site-name img, .site-name a{
 	height: 82px;
+	margin-top: -25px;
 }
 .container-fluid form{
 	display: -webkit-flex;
@@ -143,6 +144,7 @@ header.navbar {
 	flex-direction: column;
 
 	width: 185px;
+	margin-bottom: 25px;
 }
 
 .container-fluid form div{
@@ -153,7 +155,7 @@ header.navbar {
 .container-fluid input[type="text"]{
 	border:1px solid #ccc;
 	border-radius: 0px;
-	width: 145px;
+	width: 100%;
 	height: 33px;
 	margin:0 auto;
 }
@@ -198,7 +200,7 @@ ul#main-navigation >li:nth-child(1){
 	border-top:1px solid #0099ee;
 }
 .navbar-nav > li > a{
-	padding: 10px 0;
+	padding: 5px 0;
 	text-transform: uppercase;
 	font-size:12px;
 }
@@ -206,11 +208,15 @@ ul#main-navigation >li:nth-child(1){
 	float: none;
 }
 
+#nav-menu{
+	margin-bottom: 15px;
+}
+
 .btn-primary{
 	/*background-color: #0099ee;*/
 	border-radius: 0px;
 	padding: 0;
-	width: 145px;
+	width: 100%;
 	padding: 2px 0;
 }
 .btn-default{
@@ -227,10 +233,11 @@ ul#main-navigation >li:nth-child(1){
 	text-decoration: underline;
 }
 .social-nawi{
-	
+	margin-left: -25px;
+	margin-top: 10px;
 }
 .social-nawi a{
-	color:#333;
+	color:#777;
 	text-decoration: none;
 	font-size: 21px;
 }
@@ -240,6 +247,8 @@ ul#main-navigation >li:nth-child(1){
 .logo-edcom{
 	max-width:220px;
 	margin: 15% auto;
+	width: 100%;
+	opacity: 0.8;
 }
 .container > main{
 	width: 100%;
