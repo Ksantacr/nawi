@@ -30,6 +30,7 @@
 				{$article->getLocalizedTitle()|strip_unsafe_html}
 			</a>
 
+
 			<ul class="galleys_links">
 				{foreach from=$article->getGalleys() item=galley}
 					<li>
@@ -41,6 +42,7 @@
 					</li>
 				{/foreach}
 			</ul>
+
 
 
 		</h3>
@@ -81,6 +83,7 @@
 							{assign var="hasArticleAccess" value=1}
 						{/if}
 						{*include file="frontend/objects/galley_link.tpl" parent=$article hasAccess=$hasArticleAccess*}
+
 					</li>
 				{/foreach}
 			</ul>
