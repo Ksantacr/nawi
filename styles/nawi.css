@@ -355,7 +355,6 @@ p.current_issue_title{
 	color:#0099ee;
 	text-shadow: 1px 1px #aaa,
 	2px 2px #ddd;
-	margin-bottom: 5%;
 }
 
 .nawi-hide{
@@ -454,12 +453,6 @@ p.current_issue_title{
 	width: 65%;
 }
 .obj_galley_link{
-	display: inline-block;
-	padding: 0 1em;
-	background-color: #fff;
-	border: 1px solid #007ab2;
-	border-radius: 3px;
-	font-size: 13px;
 	line-height: 28px;
 	color: #007ab2;
 	text-decoration: none;
@@ -467,14 +460,12 @@ p.current_issue_title{
 .obj_galley_link:before{
 	font-family: FontAwesome;
 	content: "\f0f6";
-	margin-right: 0.25em;
 	font-size: 1.25em;
 	/*color:#c0392b;*/
 }
 .obj_galley_link.pdf:before{
 	font-family: FontAwesome;
 	content: "\f1c1";
-	margin-right: 0.25em;
 }
 .obj_galley_link.pdf{
 	color:#e74c3c;
@@ -511,7 +502,6 @@ h3.media-heading .galleys_links a{
 }
 .galleys_links li{
 	display: inline-block;
-	margin-right: 1em;
 }
 h3.media-heading{
 	font-size: 1.1em;

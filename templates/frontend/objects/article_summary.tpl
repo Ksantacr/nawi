@@ -75,6 +75,9 @@
 
 			<!-- Archivos a descargar -->
 			{if $hasAccess}
+			
+			
+			<!--
 			<ul class="galleys_links">
 				{foreach from=$article->getGalleys() item=galley}
 					<li>
@@ -86,7 +89,8 @@
 
 					</li>
 				{/foreach}
-			</ul>
+			</ul>-->
+
 	{/if}
 		{/if}
 	</div>
