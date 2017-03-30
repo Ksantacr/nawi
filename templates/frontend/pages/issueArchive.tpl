@@ -24,6 +24,9 @@
 		</div>
 	{else}
 
+		<div class="page-header">
+			<h1>Volúmenes{*translate key="about.aboutContext"*}</h1>
+		</div>
 		{* List issues *}
 		<div class="issues media-list">
 			{iterate from=issues item=issue}
@@ -40,5 +43,11 @@
 		{/if}
 	{/if}
 </div>
+	{* Search form *}
+	{if !$noContextsConfigured}
+		<!-- <div class="pull-md-right"> -->
+		{include file="frontend/components/searchForm_simple.tpl"}
+		<!-- </div> -->
+	{/if}
 
 {include file="common/frontend/footer.tpl"}
