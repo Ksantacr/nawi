@@ -23,16 +23,16 @@
 
 		<div class="form-group">
 			
-			<input type="text" name="username" class="form-control" id="login-username" placeholder="{translate key='user.username'}" value="{$username|escape}" maxlenght="32" required>
+			<input type="text" name="username" class="form-control" id="login-username" placeholder="Usuario"{**{translate key='user.username'}*} value="{$username|escape}" maxlenght="32" required>
 		</div>
 
 		<div class="form-group">
 			
-			<input type="password" name="password" class="form-control" id="login-password" placeholder="{translate key='user.password'}" password="true" maxlength="32" required="$passwordRequired">
+			<input type="password" name="password" class="form-control" id="login-password" placeholder="Contraseña"{**{translate key='user.password'}*} password="true" maxlength="32" required="$passwordRequired">
 		</div>
 		<div class="login">
 			<button type="submit" class="btn btn-primary">
-				{translate key="user.login"}
+				{**{translate key="user.login"}*}Iniciar Sesión
 			</button>
 		</div>
 
@@ -40,12 +40,12 @@
 			{if !$disableUserReg}
 				{url|assign:registerUrl page="user" op="register" source=$source}
 				<a class="btn btn-default register-button" href="{$registerUrl}" role="button">
-					{translate key="user.login.registerNewAccount"}
+					{**{translate key="user.login.registerNewAccount"}*}Registrarse
 				</a>
 			{/if}
 
 			<a href="{url page="login" op="lostPassword"}">
-				{translate key="user.login.forgotPassword"}
+				{**{translate key="user.login.forgotPassword"}*}Olvidé contraseña
 			</a>
 		</div>
 		<!-- <div class="checkbox">
