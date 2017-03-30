@@ -106,7 +106,7 @@
 	{/if}
 </div><!-- .page -->
 
-{* Search form *}
+	{* Search form *}
 	{if !$noContextsConfigured}
 		<!-- <div class="pull-md-right"> -->
 		{include file="frontend/components/searchForm_simple.tpl"}

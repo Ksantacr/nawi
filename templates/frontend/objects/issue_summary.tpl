@@ -15,6 +15,11 @@
 
 	{* Show cover image and use cover description *}
 	{if $issue->getCoverImage()}
+	{if $issueTitle}
+				<div class="series lead">
+					{$issueSeries|escape}
+				</div>
+			{/if}
 		<div class="media-left">
 			<a class="cover" href="{url op="view" path=$issue->getBestIssueId($currentJournal)}">
 				<img class="media-object" src="{$coverImagePath|escape}{$issue->getCoverImage()}">
@@ -32,11 +37,7 @@
 					{$issueSeries|escape}
 				{/if}
 			</a>
-			{if $issueTitle}
-				<div class="series lead">
-					{$issueSeries|escape}
-				</div>
-			{/if}
+			
 		</h2>
 		<div class="description">
 			{$issueDescription|strip_unsafe_html|nl2br}

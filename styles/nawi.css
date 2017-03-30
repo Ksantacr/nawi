@@ -72,11 +72,21 @@ body{
 	font-size: 14px;
 	color: #6e6e6e;
 }
+<<<<<<< HEAD
 
 h1{
 	color: #39f;
 }
 
+=======
+a{
+	color:#39f;
+}
+.media-body{
+	/*width: auto;*/
+	/*width: 100%;*/
+}
+>>>>>>> c41f9187af55cbb08f7e317f323b984873e4bacf
 .pkp_structure_page{
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -428,7 +438,7 @@ p.current_issue_title{
 	width: 60%;
 	margin-left: 23px;
 }
-.media-body .media-heading{
+.nawi-revista .media-body .media-heading{
 	padding: 0.4em 0.2em 0.1em 0.2em;
 	background-color: #ccc;
 	font-size: 1.05em;
@@ -450,6 +460,53 @@ p.current_issue_title{
 	display: flex;
 	-ms-align-items: center;
 	align-items: center;
+}
+.issues{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.issues .media{
+	margin: 0;
+}
+.issues .media-left{
+	padding: 0;
+}
+.issues .issue-summary .media-body{
+	width: 100%;
+}
+.issues .issue-summary{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.issues .issue-summary .series{
+	margin-bottom: 0;
+}
+.issues .issue-summary h2{
+	font-size: 16px;
+}
+.issues .issue-summary img{
+	max-width: 160px;
+}
+.issues .issue-summary img:hover{
+	/*opacity: 0.9;*/
 }
 .obj_galley_link{
 	padding: 0 0.4em;
