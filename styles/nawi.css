@@ -73,6 +73,10 @@ body{
 	color: #6e6e6e;
 }
 
+h1{
+	color: #39f;
+}
+
 .pkp_structure_page{
 	display: -webkit-flex;
 	display: -moz-flex;
