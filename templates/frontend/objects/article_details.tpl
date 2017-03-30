@@ -137,32 +137,7 @@
 				{* Screen-reader heading for easier navigation jumps *}
 				<h2 class="sr-only">{translate key="plugins.themes.bootstrap3.article.details"}</h2>
 
-				{* Citation formats *}
-				{if $citationPlugins|@count}
-					<div class="panel panel-default citation_formats">
-						<div class="panel-heading">
-							{translate key="submission.howToCite"}
-						</div>
-						<div class="panel-body">
-
-							{* Output the first citation format *}
-							{foreach from=$citationPlugins name="citationPlugins" item="citationPlugin"}
-								<div id="citationOutput" class="citation_output">
-									{$citationPlugin->fetchCitation($article, $issue, $currentContext)}
-								</div>
-								{php}break;{/php}
-							{/foreach}
-
-							{* Output list of all citation formats *}
-							<div class="list-group citation_format_options">
-								{foreach from=$citationPlugins name="citationPlugins" item="citationPlugin"}
-									{capture assign="citationUrl"}{url page="article" op="cite" path=$article->getBestArticleId()}/{$citationPlugin->getName()|escape}{/capture}
-									<a class="list-group-item {$citationPlugin->getName()|escape}" href="{$citationUrl}"{if !$citationPlugin->isDownloadable()} data-load-citation="true"{/if} target="_blank">{$citationPlugin->getCitationFormatName()|escape}</a>
-								{/foreach}
-							</div>
-						</div>
-					</div>
-				{/if}
+				
 
 				{* PubIds (requires plugins) *}
 				{foreach from=$pubIdPlugins item=pubIdPlugin}
