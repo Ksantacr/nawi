@@ -86,7 +86,7 @@ a{
 	/*width: auto;*/
 	/*width: 100%;*/
 }
->>>>>>> c41f9187af55cbb08f7e317f323b984873e4bacf
+
 .pkp_structure_page{
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -148,6 +148,7 @@ header.navbar {
 .site-name img, .site-name a{
 	height: 82px;
 	margin-top: -25px;
+	margin-bottom: 15px;
 }
 .container-fluid form{
 	display: -webkit-flex;
@@ -374,6 +375,7 @@ div.homepage-image img{
 	margin-bottom: 10px;
 }
 p.current_issue_title{
+	margin-bottom: -45px;
 	color:#0099ee;
 	text-shadow: 1px 1px #aaa,
 	2px 2px #ddd;
@@ -409,6 +411,7 @@ p.current_issue_title{
 	margin-bottom: 1em;
 }
 .nav-tabs{
+	margin-top: 55px;
 	border:none;
 }
 .nav-tabs > li > a{
