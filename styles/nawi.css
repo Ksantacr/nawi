@@ -498,6 +498,7 @@ p.current_issue_title{
 	-o-flex-direction: column;
 	flex-direction: column;
 	justify-content: space-around;
+	flex-grow: 1;
 }
 .issues .issue-summary .series{
 	margin-bottom: 0;
