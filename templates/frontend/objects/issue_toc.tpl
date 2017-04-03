@@ -33,7 +33,8 @@
 	</ul>
 	<!--Fin categorías-->
 </div>
-
+</div>
+<div class="issue-toc nawi-revista no-wrap">
 	<div class="heading">
 
 		{* Issue cover image and description*}

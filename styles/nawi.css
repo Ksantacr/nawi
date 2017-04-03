@@ -439,7 +439,7 @@ p.current_issue_title{
 	align-self: flex-start;
 }
 .nawi-revista .heading + div{
-	width: 60%;
+	/*width: 60%;*/
 	margin-left: 23px;
 }
 .nawi-revista .media-body .media-heading{
@@ -608,4 +608,7 @@ input.buscar::-moz-placeholder {
 }
 input.buscar:-ms-input-placeholder {  
    font-style: italic; 
+}
+.no-wrap{
+	flex-wrap:nowrap;
 }

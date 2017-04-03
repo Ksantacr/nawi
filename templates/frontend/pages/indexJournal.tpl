@@ -43,10 +43,8 @@
 				<img class="img-responsive" src="{$publicFilesDir}/{$homepageImage.uploadName|escape:"url"}" alt="{$homepageImageAltText|escape}">
 
 				<figcaption>
-					
-					<h3>Título fijo</h3>
-
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores aliquam cum minima, illum vero tempora blanditiis esse labore recusandae non ullam, iure. Rem eligendi ullam sapiente modi beatae minima. Esse!</figcaption>
+					{$additionalHomeContent}
+				</figcaption>
 
 			</figure>
 
@@ -99,11 +97,11 @@
 			</a>
 	</div>*}
 	{* Additional Homepage Content *}
-	{if $additionalHomeContent}
+	{*if $additionalHomeContent}
 		<section class="additional_content">
 			{$additionalHomeContent}
 		</section>
-	{/if}
+	{/if*}
 </div><!-- .page -->
 
 	{* Search form *}
