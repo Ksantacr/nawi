@@ -33,7 +33,8 @@
 	</ul>
 	<!--Fin categorías-->
 </div>
-
+</div>
+<div class="issue-toc nawi-revista no-wrap">
 	<div class="heading">
 
 		{* Issue cover image and description*}
@@ -41,7 +42,7 @@
 		{if $issueCover}
 			<div class="nawi-portada">
 				<a class="cover" href="{url op="view" page="issue" path=$issue->getBestIssueId()}">
-					<img class="img-responsive" src="{$coverImagePath|escape}{$issueCover|escape}"{if $issue->getCoverImageAltText() != ''} alt="{$issue->getCoverImageAltText()|escape}"{/if}>
+					<img src="{$coverImagePath|escape}{$issueCover|escape}"{if $issue->getCoverImageAltText() != ''} alt="{$issue->getCoverImageAltText()|escape}"{/if}>
 				</a>
 				{*{if $issue->hasDescription()}
 					<div class="description">
