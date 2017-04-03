@@ -233,12 +233,13 @@ ul#main-navigation >li:nth-child(1){
 	margin-top: 5px;
 }
 
-.btn-primary{
-	/*background-color: #0099ee;*/
+.login .btn-primary{
+	background-color: #0099ee;
 	border-radius: 0px;
 	padding: 0;
 	width: 100%;
 	padding: 2px 0;
+	border-color: transparent;
 }
 .btn-default{
 	border-radius: 0px;
@@ -327,10 +328,10 @@ div.homepage-image img{
 	border: 1px solid #c06;
 	margin-left: -5px;
 }
-.navbar-nawi button:hover{
+/*.navbar-nawi button:hover{
 	/*border: 1px solid #cf0274;*/
-	font-size: 1.1em;
-}
+	/*font-size: 1.1em;*/
+/*}*/
 .navbar-nawi button span{
 	color:#c06;
 	font-size: 0.9em;
