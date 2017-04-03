@@ -145,10 +145,15 @@ header.navbar {
 	-ms-align-items: center;
 	/*align-items: center;*/
 }
+
 .site-name img, .site-name a{
 	height: 82px;
-	margin-top: -25px;
-	margin-bottom: 15px;
+
+
+}
+
+.site-name img{
+	margin-bottom: 35px;
 }
 .container-fluid form{
 	display: -webkit-flex;
@@ -164,7 +169,11 @@ header.navbar {
 	flex-direction: column;
 
 	width: 185px;
-	margin-bottom: 25px;
+	margin-bottom: 50px;
+}
+
+.register-forget{
+	margin-bottom: 0px;
 }
 
 .container-fluid form div{
@@ -207,7 +216,7 @@ header .container-fluid{
 	-o-flex-direction: column;
 	flex-direction: column;
 	text-align: center;
-	margin-bottom: 15%;
+	
 	width: 185px;
 }
 ul#main-navigation >li{
@@ -229,8 +238,7 @@ ul#main-navigation >li:nth-child(1){
 }
 
 #nav-menu{
-	margin-bottom: 15px;
-	margin-top: 5px;
+	margin-bottom: 50px;
 }
 
 .login .btn-primary{

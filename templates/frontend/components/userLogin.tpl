@@ -36,7 +36,7 @@
 			</button>
 		</div>
 
-		<div class="">
+		<div class="register-forget">
 			{if !$disableUserReg}
 				{url|assign:registerUrl page="user" op="register" source=$source}
 				<a class="btn btn-default register-button" href="{$registerUrl}" role="button">
