@@ -410,9 +410,10 @@ div.homepage-image img{
 }
 p.current_issue_title{
 	margin-bottom: -45px;
-	color:#0099ee;
-	text-shadow: 1px 1px #aaa,
-	2px 2px #ddd;
+	/*text-shadow: 1px 1px #aaa,
+	2px 2px #ddd;*/
+	font-weight: bolder;
+	color:#337ab7;
 }
 
 .nawi-hide{
