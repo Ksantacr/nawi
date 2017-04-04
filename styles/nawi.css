@@ -343,17 +343,17 @@ div.homepage-image img{
 }*/
 .navbar-nawi .form-group input{
 	border-radius: 0px;
-	border: 1px solid #c06;
+	border: 1px solid #fcd;
 	/*padding: 0;*/
 	height: 30px;
 }
 .navbar-nawi .form-group input:focus{
-	border-color: #c39;
+	border-color: #fcd;
 	box-shadow:none;
 }
 .navbar-nawi button,.navbar-nawi button:hover{
 	padding: 4px 11px;
-	border: 1px solid #c06;
+	border: 1px solid #fcd;
 	margin-left: -5px;
 }
 /*.navbar-nawi button:hover{
@@ -361,7 +361,7 @@ div.homepage-image img{
 	/*font-size: 1.1em;*/
 /*}*/
 .navbar-nawi button span{
-	color:#c06;
+	color:#fcd;
 	font-size: 0.9em;
 }
 .popular{
