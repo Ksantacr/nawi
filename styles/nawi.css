@@ -263,7 +263,7 @@ ul#main-navigation >li:nth-child(1){
 	text-decoration: underline;
 }
 .social-nawi{
-	margin-left: -25px;
+	
 	margin-top: 10px;
 }
 .social-nawi a{
@@ -292,7 +292,7 @@ ul#main-navigation >li:nth-child(1){
 
 .logos{
 	flex-direction: row !important;
-	width: 100%
+	width: 100%;
 	justify-content: center;
 }
 
