@@ -263,7 +263,7 @@ ul#main-navigation >li:nth-child(1){
 	text-decoration: underline;
 }
 .social-nawi{
-	
+	width: 90px;
 	margin-top: 10px;
 }
 .social-nawi a{
@@ -275,15 +275,15 @@ ul#main-navigation >li:nth-child(1){
 	color:#0099ee;
 }
 .logo-edcom{
-	max-width:220px;
+	
 	/*margin: 15% auto;
 	margin-top: 5px;*/
-	width: 100%;
+	width: 130px;
 	opacity: 0.8;
 }
 
 .logo-espol{
-	width: 100%;
+	width: 50px;
 }
 
 .container > main{
