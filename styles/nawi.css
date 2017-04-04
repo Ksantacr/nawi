@@ -396,6 +396,11 @@ div.homepage-image img{
 .pkp_page_index .journal-description{
 	margin-bottom: 0;
 }
+
+.journal-description{
+	font-style: italic;
+}
+
 .current_issue header{
 	margin:0;
 	padding: 0;
