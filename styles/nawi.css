@@ -276,14 +276,34 @@ ul#main-navigation >li:nth-child(1){
 }
 .logo-edcom{
 	max-width:220px;
-	margin: 15% auto;
-	margin-top: 5px;
+	/*margin: 15% auto;
+	margin-top: 5px;*/
 	width: 100%;
 	opacity: 0.8;
 }
+
+.logo-espol{
+	width: 100%;
+}
+
 .container > main{
 	width: 100%;
 }
+
+.logos{
+	flex-direction: row !important;
+	width: 100%
+	justify-content: center;
+}
+
+.divLogoEdcom{
+	width: 150px;
+}
+
+.divLogoEspol{
+	width: 60px;
+}
+
 div.homepage-image{
 	width: 100%;
 }

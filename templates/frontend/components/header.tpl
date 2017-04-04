@@ -163,8 +163,15 @@
 				{include file="frontend/components/userLogin.tpl"}
 			</div>
 
-			<div class="container-fluid">
-				<img src="{$baseUrl}/plugins/themes/nawi/images/logo_edcom.png" alt="{$applicationName|escape}" title="{$applicationName|escape}" class="logo-edcom"/>
+			<div class="logos container-fluid">
+				<div class="divLogoEdcom">
+					<img src="{$baseUrl}/plugins/themes/nawi/images/logo_edcom.png" alt="{$applicationName|escape}" title="{$applicationName|escape}" class="logo-edcom"/>	
+				</div>
+				<div class="divLogoEspol">
+					<img src="{$baseUrl}/plugins/themes/nawi/images/logo_espol.gif" alt="{$applicationName|escape}" title="{$applicationName|escape}" class="logo-espol"/>	
+				</div>
+
+				
 			</div>
 			<div class="container-fluid">
 				<div class="social-nawi">
