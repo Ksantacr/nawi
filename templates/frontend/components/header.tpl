@@ -175,13 +175,13 @@
 			</div>
 			<div class="container-fluid">
 				<div class="social-nawi">
-					<a href="#">
+					<a href="https://www.facebook.com/n1aw1" target="_blank">
 						<span class="icon-facebook-with-circle"></span>	
 					</a>
-					<a href="#">
+					<a href="https://www.plus.google.com"  target="_blank">
 						<span class="icon-google-with-circle"></span>	
 					</a>
-					<a href="#">
+					<a href="https://www.instagram.com/"  target="_blank">
 						<span class="icon-instagram-with-circle"></span>	
 					</a>
 				</div>
