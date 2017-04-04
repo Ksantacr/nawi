@@ -36,66 +36,6 @@
 
 		{* Header *}
 		<header class="navbar navbar-default" id="headerNavigationContainer" role="banner">
-
-			 {* User profile, login, etc, navigation menu*}
-			<div class="container-fluid">
-				<div class="row">
-					<ul id="navigationUser" class="nav nav-pills tab-list pull-right" role="navigation" aria-label="{translate|escape key="common.navigation.user"}">
-						{if $isUserLoggedIn}
-							<li>
-								<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="{url router=$smarty.const.ROUTE_PAGE page="submissions"}">
-									{$loggedInUsername|escape}
-									<span class="badge">
-										{$unreadNotificationCount}
-									</span>
-								</a>
-								<ul class="dropdown-menu dropdown-menu-right">
-									{if array_intersect(array(ROLE_ID_MANAGER, ROLE_ID_ASSISTANT, ROLE_ID_REVIEWER, ROLE_ID_AUTHOR), $userRoles)}
-										<li>
-											<a href="{url router=$smarty.const.ROUTE_PAGE page="submissions"}">
-												{translate key="navigation.dashboard"}
-												<span class="badge">
-													{$unreadNotificationCount}
-												</span>
-											</a>
-										</li>
-									{/if}
-									<li>
-										<a href="{url router=$smarty.const.ROUTE_PAGE page="user" op="profile"}">
-											{translate key="common.viewProfile"}
-										</a>
-									</li>
-									{if array_intersect(array(ROLE_ID_SITE_ADMIN), $userRoles)}
-									<li>
-										<a href="{if $multipleContexts}{url router=$smarty.const.ROUTE_PAGE context="index" page="admin" op="index"}{else}{url router=$smarty.const.ROUTE_PAGE page="admin" op="index"}{/if}">
-											{translate key="navigation.admin"}
-										</a>
-									</li>
-									{/if}
-									<li>
-										<a href="{url router=$smarty.const.ROUTE_PAGE page="login" op="signOut"}">
-											{translate key="user.logOut"}
-										</a>
-									</li>
-									{if $isUserLoggedInAs}
-										<li>
-											<a href="{url router=$smarty.const.ROUTE_PAGE page="login" op="signOutAsUser"}">
-												{translate key="user.logOutAs"} {$loggedInUsername|escape}
-											</a>
-										</li>
-									{/if}
-								</ul>
-							</li>
-						 {*else*} 
-							<!--{if !$hideRegisterLink}
-								<li><a href="{url router=$smarty.const.ROUTE_PAGE page="user" op="register"}">{translate key="navigation.register"}</a></li>
-							{/if}
-							<li><a href="{url router=$smarty.const.ROUTE_PAGE page="login"}">{translate key="navigation.login"}</a></li>-->
-						{/if}
-					</ul>
-				</div><!-- .row -->
-			</div><!-- .container-fluid -->
-
 			<div class="container-fluid">
 
 				<div class="navbar-header">
@@ -147,7 +87,6 @@
 				<nav id="nav-menu" class="navbar-collapse collapse" aria-label="{translate|escape key="common.navigation.site"}">
 					{* Primary navigation menu for current application *}
 					{include file="frontend/components/primaryNavMenu.tpl"}
-
 					<!-- {* Search form *}
 					{if !$noContextsConfigured}
 						<div class="pull-md-right">
@@ -160,7 +99,48 @@
 			<div class="container-fluid">
 				<!-- <div class="pull-md-right">
 				</div> -->
-				{include file="frontend/components/userLogin.tpl"}
+				{* User profile, login, etc, navigation menu*}
+				{if $isUserLoggedIn}
+				<h1 class="usuario">Bienvenido, {$loggedInUsername|escape}</h1>
+					<ul class="dashboard">
+									{if array_intersect(array(ROLE_ID_MANAGER, ROLE_ID_ASSISTANT, ROLE_ID_REVIEWER, ROLE_ID_AUTHOR), $userRoles)}
+										<li>
+											<a href="{url router=$smarty.const.ROUTE_PAGE page="submissions"}">
+												{translate key="navigation.dashboard"}
+												<span class="badge">
+													{$unreadNotificationCount}
+												</span>
+											</a>
+										</li>
+									{/if}
+									<li>
+										<a href="{url router=$smarty.const.ROUTE_PAGE page="user" op="profile"}">
+											{translate key="common.viewProfile"}
+										</a>
+									</li>
+									{if array_intersect(array(ROLE_ID_SITE_ADMIN), $userRoles)}
+									<li>
+										<a href="{if $multipleContexts}{url router=$smarty.const.ROUTE_PAGE context="index" page="admin" op="index"}{else}{url router=$smarty.const.ROUTE_PAGE page="admin" op="index"}{/if}">
+											{translate key="navigation.admin"}
+										</a>
+									</li>
+									{/if}
+									<li>
+										<a href="{url router=$smarty.const.ROUTE_PAGE page="login" op="signOut"}">
+											{translate key="user.logOut"}
+										</a>
+									</li>
+									{if $isUserLoggedInAs}
+										<li>
+											<a href="{url router=$smarty.const.ROUTE_PAGE page="login" op="signOutAsUser"}">
+												{translate key="user.logOutAs"} {$loggedInUsername|escape}
+											</a>
+										</li>
+									{/if}
+								</ul>
+				{else}
+					{include file="frontend/components/userLogin.tpl"}
+				{/if}
 			</div>
 
 			<div class="logos container-fluid">
@@ -175,13 +155,13 @@
 			</div>
 			<div class="container-fluid">
 				<div class="social-nawi">
-					<a href="#">
+					<a href="https://www.facebook.com/n1aw1" target="_blank">
 						<span class="icon-facebook-with-circle"></span>	
 					</a>
-					<a href="#">
+					<a href="https://www.plus.google.com"  target="_blank">
 						<span class="icon-google-with-circle"></span>	
 					</a>
-					<a href="#">
+					<a href="https://www.instagram.com/"  target="_blank">
 						<span class="icon-instagram-with-circle"></span>	
 					</a>
 				</div>

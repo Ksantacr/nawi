@@ -410,9 +410,10 @@ div.homepage-image img{
 }
 p.current_issue_title{
 	margin-bottom: -45px;
-	color:#0099ee;
-	text-shadow: 1px 1px #aaa,
-	2px 2px #ddd;
+	/*text-shadow: 1px 1px #aaa,
+	2px 2px #ddd;*/
+	font-weight: bolder;
+	color:#337ab7;
 }
 
 .nawi-hide{
@@ -644,4 +645,20 @@ input.buscar:-ms-input-placeholder {
 }
 .no-wrap{
 	flex-wrap:nowrap;
+}
+.dashboard{
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+.usuario{
+	text-transform: capitalize;
+	font-size: 16px;
+	color: #777;
+}
+.dashboard, .usuario{
+	text-align: center;
 }
