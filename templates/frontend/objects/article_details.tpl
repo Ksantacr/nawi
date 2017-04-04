@@ -127,6 +127,7 @@
 
 				{* Keywords *}
 				{* @todo keywords not yet implemented *}
+				
 
 				{call_hook name="Templates::Article::Main"}
 
