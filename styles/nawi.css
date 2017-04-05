@@ -639,6 +639,10 @@ h2.current_issue_title{
 	padding: 0;
 }
 
+.media-heading{
+	margin-bottom: 25px;
+}
+
 h3.media-heading .galleys_links a{
 	//color:#2980b9;
 	text-decoration: none;
