@@ -9,7 +9,7 @@
  *       represents a page-level override, and doesn't indicate whether or not
  *       sidebars have been configured for thesite.
  *}
-
+{include file="frontend/components/logossocialFooter.tpl"}
 	</main>
 
 	{* Sidebars *}
@@ -51,5 +51,7 @@
 {load_script context="frontend" scripts=$scripts}
 
 {call_hook name="Templates::Common::Footer::PageFooter"}
+
+
 </body>
 </html>

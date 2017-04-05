@@ -38,6 +38,20 @@
 	}
 }
 @media only screen and ( max-width: 767px ){
+
+	/*pkp_structure_main{
+		padding: 0;
+	}*/
+
+	.divLogoEspol, .divLogoEdcom, .social-nawi{
+		display: none;
+	}
+
+	.r-social, .divLogoEspol2, .divLogoEdcom2{
+		display: inline-block;
+		background-color: #f6f6f5;
+	}
+
 	.pkp_structure_page{
 		-webkit-flex-direction: column;
 		-moz-flex-direction: column;
@@ -99,6 +113,12 @@
 	.imagen-principal{
 		margin: 0 -15px;
 	}
+
+	.imagen-principal figcaption{
+		height: 100%;
+		background-color: rgba(0,0,0,0.65);
+	}
+
 	#nav-menu{
 		margin-bottom: 5%;
 	}

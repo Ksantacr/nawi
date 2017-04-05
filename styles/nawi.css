@@ -157,6 +157,11 @@ header.navbar {
 .site-name img{
 	margin-bottom: 35px;
 }
+
+.container-fluid{
+text-align: center;
+}
+
 .container-fluid form{
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -264,18 +269,28 @@ ul#main-navigation >li:nth-child(1){
 	border-color: transparent;
 	text-decoration: underline;
 }
-.social-nawi{
+.social-nawi, .r-social{
 	width: 90px;
 	margin-top: 10px;
 }
-.social-nawi a{
+
+.social-nawi a, .r-social a{
 	color:#6e6e6e;
 	text-decoration: none;
 	font-size: 1.7em;
 }
-.social-nawi a:hover{
+.social-nawi a:hover, .r-social a:hover{
 	color:#0099ee;
 }
+
+.r-social{
+	margin-bottom: 10px;
+}
+
+.logosFooter{
+	background-color: #f6f6f5;
+}
+
 .logo-edcom{
 	
 	/*margin: 15% auto;
@@ -288,6 +303,11 @@ ul#main-navigation >li:nth-child(1){
 	width: 50px;
 }
 
+.r-social, .divLogoEdcom2, .divLogoEspol2{
+	display: none;
+	text-align: center;
+}
+
 .container > main{
 	width: 100%;
 }
@@ -296,6 +316,7 @@ ul#main-navigation >li:nth-child(1){
 	flex-direction: row !important;
 	width: 100%;
 	justify-content: center;
+	text-align: center;
 }
 
 .divLogoEdcom{

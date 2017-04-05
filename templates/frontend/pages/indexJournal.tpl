@@ -100,8 +100,10 @@
 	{*if $additionalHomeContent}
 		<section class="additional_content">
 			{$additionalHomeContent}
+			
 		</section>
 	{/if*}
+
 </div><!-- .page -->
 
 	{* Search form *}
@@ -113,3 +115,4 @@
 
 
 {include file="frontend/components/footer.tpl"}
+
