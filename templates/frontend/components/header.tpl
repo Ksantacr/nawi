@@ -36,17 +36,19 @@
 
 		{* Header *}
 		<header class="navbar navbar-default" id="headerNavigationContainer" role="banner">
+
+			{* Mobile hamburger menu *}
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nawi-menu" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
 			<div class="container-fluid">
 
 				<div class="navbar-header">
 
-					{* Mobile hamburger menu *}
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-menu" aria-expanded="false" aria-controls="navbar">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
+					
 
 					{* Logo or site title. Only use <h1> heading on the homepage.
 					   Otherwise that should go to the page title. *}
@@ -84,7 +86,11 @@
 				</div>
 
 				{* Primary site navigation *}
-				<nav id="nav-menu" class="navbar-collapse collapse" aria-label="{translate|escape key="common.navigation.site"}">
+
+			</div><!-- .pkp_head_wrapper -->
+			<div id="nawi-menu" class="navbar-collapse collapse" aria-label="{translate|escape key="common.navigation.site"}">
+			<div class="container-fluid ocultar">
+				<nav id="nav-menu">
 					{* Primary navigation menu for current application *}
 					{include file="frontend/components/primaryNavMenu.tpl"}
 					<!-- {* Search form *}
@@ -95,8 +101,8 @@
 					{/if} -->
 				</nav>
 
-			</div><!-- .pkp_head_wrapper -->
-			<div class="container-fluid">
+			</div>
+			<div class="container-fluid ocultar">
 				<!-- <div class="pull-md-right">
 				</div> -->
 				{* User profile, login, etc, navigation menu*}
@@ -143,7 +149,7 @@
 				{/if}
 			</div>
 
-			<div class="logos container-fluid">
+			<div class="logos container-fluid ocultar">
 				<div class="divLogoEdcom">
 					<img src="{$baseUrl}/plugins/themes/nawi/images/logo_edcom.png" alt="{$applicationName|escape}" title="{$applicationName|escape}" class="logo-edcom"/>	
 				</div>
@@ -153,7 +159,7 @@
 
 				
 			</div>
-			<div class="container-fluid">
+			<div class="container-fluid ocultar">
 				<div class="social-nawi">
 					<a href="https://www.facebook.com/n1aw1" target="_blank">
 						<span class="icon-facebook-with-circle"></span>	
@@ -167,6 +173,7 @@
 				</div>
 
 			</div>
+		</div>
 		</header><!-- .pkp_structure_head -->
 		{* Wrapper for page content and sidebars *}
 		<div class="pkp_structure_content container">

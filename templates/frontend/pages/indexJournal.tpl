@@ -84,9 +84,9 @@
 					{*translate key="journal.currentIssue"*}
 				</h2>
 			</header> -->
-			<p class="current_issue_title lead">
+			<h2 class="current_issue_title lead">
 				{$issue->getIssueIdentification()|strip_unsafe_html}
-			</p>
+			</h2>
 			{include file="frontend/objects/issue_toc.tpl"}
 		</section>
 	{/if}

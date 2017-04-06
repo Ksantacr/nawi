@@ -9,6 +9,7 @@ class NawiThemePlugin extends ThemePlugin {
 		$this->addStyle('bootstrap', 'styles/bootstrap.less');
 
 		$this->addStyle('stylesheet', 'styles/nawi.css'); //llamada a estilos
+		$this->addStyle('1', 'styles/responsive.css');
 		// Load jQuery from a CDN or, if CDNs are disabled, from a local copy.
 		$min = Config::getVar('general', 'enable_minified') ? '.min' : '';
 		$request = Application::getRequest();

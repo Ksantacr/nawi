@@ -1,0 +1,109 @@
+@media only screen and ( max-width: 370px ){
+	.navbar-header{
+		margin-left: 30px !important;
+		-ms-align-self: flex-start;
+		align-self: flex-start;
+	}
+}
+@media only screen and ( max-width: 378px ){
+	.nav-tabs > li > a{
+		padding: 0.6em 1.2em;
+	}
+}
+@media only screen and ( max-width: 550px ){
+	.nawi-revista .heading,.nawi-revista .heading +div{
+		width: 100%;
+	}
+	.nawi-revista .heading +div{
+		margin-left: 0;
+	}
+	.no-wrap{
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+	.nawi-portada{
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.media{
+		position: relative;
+	}
+	.media-heading ul{
+		position: absolute;
+		bottom: -2px;
+		right: 5px;
+	}
+}
+@media only screen and ( max-width: 767px ){
+	.pkp_structure_page{
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+	header.navbar{
+		width: 100%;
+		min-height: 100px;
+		padding: 0;
+		min-width: 100%;
+		/*height: 100px;*/
+		position: fixed;
+		margin-bottom: 0;
+		z-index: 1;
+		max-height: 100vh;
+	}
+	header .ocultar{
+		/*display: none;*/
+	}
+	.navbar-default .navbar-toggle{
+		border-color: transparent;
+	}
+	.navbar-toggle{
+		position: fixed;
+		margin: 0;
+		top: 6%;
+		right: 10px;
+		background-color: transparent;
+	}
+	.navbar-toggle .icon-bar{
+		width: 37px;
+		height: 5px;
+		border-radius: 4px;
+		margin: 6px 0;
+	}
+	.navbar-default .navbar-toggle .icon-bar{
+		background-color: #bf0274;
+	}
+	.container{
+		width: 100%;
+		margin-left: 0;
+		margin-top: 130px;
+	}
+	.site-name img{
+		margin-bottom: 0;
+	}
+	.navbar-brand{
+		/*padding: 0;*/
+	}
+	form .form-group, form .navbar-nawi button{
+		display: inline-block;
+		vertical-align: top;
+	}
+	form.navbar-nawi{
+		right: 4px;
+	}
+	.imagen-principal{
+		margin: 0 -15px;
+	}
+	#nav-menu{
+		margin-bottom: 5%;
+	}
+	.container-fluid form{
+		margin-bottom: 7%;
+	}
+
+}

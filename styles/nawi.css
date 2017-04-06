@@ -145,7 +145,9 @@ header.navbar {
 	-ms-align-items: center;
 	/*align-items: center;*/
 }
-
+.navbar-default .navbar-collapse{
+	border-color:transparent;
+}
 .site-name img, .site-name a{
 	height: 82px;
 
@@ -238,7 +240,7 @@ ul#main-navigation >li:nth-child(1){
 }
 
 #nav-menu{
-	margin-bottom: 50px;
+	margin-bottom: 45px;
 }
 
 .login .btn-primary{
@@ -407,8 +409,19 @@ div.homepage-image img{
 }
 .current_issue{
 	margin-bottom: 10px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
 }
-p.current_issue_title{
+h2.current_issue_title{
+	margin-top: 0;
 	margin-bottom: -45px;
 	/*text-shadow: 1px 1px #aaa,
 	2px 2px #ddd;*/
@@ -448,8 +461,6 @@ p.current_issue_title{
 .nav-tabs{
 	margin-top: 55px;
 	border:none;
-}
-.nav-tabs > li > a{
 }
 .nav-tabs > li > a{
 	background-color: #eee;
@@ -661,4 +672,7 @@ input.buscar:-ms-input-placeholder {
 }
 .dashboard, .usuario{
 	text-align: center;
+}
+.collapse.in{
+
 }
