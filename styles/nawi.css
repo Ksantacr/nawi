@@ -110,10 +110,12 @@ margin: 0;
 padding: 0;
 }*/
 .container{
-	width: 73%;
+	width: 100%;
 	margin: 0 0 0 0;
 	padding: 0;
-	margin-left: 27.5%;
+	margin-left: 280px;
+	/*margin-left: 25.3%;**/
+	/*margin-left: 27.5%;**/
 }
 .footer{
 	width: 100%;
@@ -136,12 +138,12 @@ header.navbar {
 	-o-flex-direction: column;
 	flex-direction: column;
 	
-	justify-content: center;
+	justify-content: space-around;
 	min-height: 100vh;
-	min-width: 200px;
+	/*min-width: 200px;**/
 
-	width: 25.3%;
-
+	/*width: 25.3%;**/
+	width: 280px;
 	-ms-align-items: center;
 	/*align-items: center;*/
 }
@@ -150,12 +152,10 @@ header.navbar {
 }
 .site-name img, .site-name a{
 	height: 82px;
-
-
 }
 
 .site-name img{
-	margin-bottom: 35px;
+	/*margin-bottom: 35px;**/
 }
 
 .container-fluid{
@@ -271,7 +271,7 @@ ul#main-navigation >li:nth-child(1){
 }
 .social-nawi, .r-social{
 	width: 90px;
-	margin-top: 10px;
+	/*margin-top: 10px;**/
 }
 
 .social-nawi a, .r-social a{
@@ -289,6 +289,7 @@ ul#main-navigation >li:nth-child(1){
 
 .logosFooter{
 	background-color: #f6f6f5;
+	margin: 0 -15px;
 }
 
 .logo-edcom{
@@ -686,7 +687,7 @@ input.buscar:-ms-input-placeholder {
 	display: inline-block;
 	padding: 0;
 	margin: 0;
-	margin-bottom: 35px;
+	/*margin-bottom: 35px;**/
 	list-style: none;
 	text-transform: uppercase;
 	font-size: 12px;
@@ -698,6 +699,9 @@ input.buscar:-ms-input-placeholder {
 }
 .dashboard, .usuario{
 	text-align: center;
+}
+h1.usuario{
+	margin: 0;
 }
 .collapse.in{
 

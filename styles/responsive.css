@@ -9,9 +9,23 @@
 	.nav-tabs > li > a{
 		padding: 0.6em 1.2em;
 	}
+
+}
+@media only screen and ( max-width: 400px ){
+	.imagen-principal figcaption{
+		height: 100%;
+		padding: 0 5px;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-ms-align-items: center;
+		align-items: center;
+		background-color: rgba(0,0,0,0.65);
+	}
 }
 @media only screen and ( max-width: 550px ){
-
 	.media-left img{
 		max-width: 100%;
 		}
@@ -25,8 +39,8 @@
 
 	.issues .issue-summary{
 		flex: none;
-		width: 50%;
-		
+		width: 48%;
+		margin: 0 1%;
 	}
 
 	.nawi-tabs li{
@@ -73,7 +87,9 @@
 	/*pkp_structure_main{
 		padding: 0;
 	}*/
-
+	.logosFooter{
+		padding-top: 1em;
+	}
 	.divLogoEspol, .divLogoEdcom, .social-nawi{
 		display: none;
 	}
@@ -145,11 +161,6 @@
 		margin: 0 -15px;
 	}
 
-	.imagen-principal figcaption{
-		height: 100%;
-		background-color: rgba(0,0,0,0.65);
-	}
-
 	#nav-menu{
 		margin-bottom: 5%;
 	}
@@ -157,4 +168,10 @@
 		margin-bottom: 7%;
 	}
 
+}
+@media only screen and (min-width: 1260px){
+	body{
+		min-height: 0 5%;
+		padding: 0 10%;
+	}
 }
