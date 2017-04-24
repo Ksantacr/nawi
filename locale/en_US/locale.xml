@@ -12,6 +12,9 @@
   -->
 
 <locale name="en_US" full_name="U.S. English">
-	<message key="plugins.themes.nawi.name">Nawi Theme</message>
-	<message key="plugins.themes.nawi.description">Tema para la revista ÑAWI.</message>
+
+  <message key="plugins.themes.nawi.name">Tema Ñawi</message>
+  <message key="plugins.themes.nawi.description">Tema para la revista ÑAWI.</message>
+  <message key="common.downloadPdf">Descargar PDF.</message>
+
 </locale>
