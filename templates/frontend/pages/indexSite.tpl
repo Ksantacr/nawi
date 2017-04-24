@@ -8,15 +8,12 @@
  *
  *}
 {include file="frontend/components/header.tpl"}
-
 <div id="main-site" class="page_index_site">
-
 	{if $about}
 		<div class="about_site">
 			{$about|nl2br}
 		</div>
 	{/if}
-
 	<div class="journals">
 		<div class="page-header">
 			<h2>
