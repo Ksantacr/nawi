@@ -15,25 +15,12 @@
 {if $displayPageHeaderTitle && !$displayPageHeaderLogo && is_string($displayPageHeaderTitle)}
 	{assign var="showingLogo" value=false}
 {/if}
-
-
 <!DOCTYPE html>
 <html lang="{$currentLocale|replace:"_":"-"}" xml:lang="{$currentLocale|replace:"_":"-"}">
 {if !$pageTitleTranslated}{translate|assign:"pageTitleTranslated" key=$pageTitle}{/if}
  {include file="core:frontend/components/headerHead.tpl"} 
 <body class="pkp_page_{$requestedPage|escape|default:'index'} pkp_op_{$requestedOp|escape|default:'index'}{if $showingLogo} has_site_logo{/if}">
 	<div class="pkp_structure_page">
-		<!-- <nav id="accessibility-nav" class="sr-only" role="navigation" aria-labelled-by="accessible-menu-label">
-			<h2 id="accessible-menu-label">
-				{translate|escape key="plugins.themes.bootstrap3.accessible_menu.label"}
-			</h2>
-			<ul>
-			  <li><a href="#main-navigation">{translate|escape key="plugins.themes.bootstrap3.accessible_menu.main_navigation"}</a></li>
-			  <li><a href="#main-content">{translate|escape key="plugins.themes.bootstrap3.accessible_menu.main_content"}</a></li>
-			  <li><a href="#sidebar">{translate|escape key="plugins.themes.bootstrap3.accessible_menu.sidebar"}</a></li>
-			</ul>
-		</nav> -->
-
 		{* Header *}
 		<header class="navbar navbar-default" id="headerNavigationContainer" role="banner">
 
@@ -47,9 +34,6 @@
 			<div class="container-fluid">
 
 				<div class="navbar-header">
-
-					
-
 					{* Logo or site title. Only use <h1> heading on the homepage.
 					   Otherwise that should go to the page title. *}
 					{if $requestedOp == 'index'}
@@ -93,18 +77,10 @@
 				<nav id="nav-menu">
 					{* Primary navigation menu for current application *}
 					{include file="frontend/components/primaryNavMenu.tpl"}
-					<!-- {* Search form *}
-					{if !$noContextsConfigured}
-						<div class="pull-md-right">
-							{include file="frontend/components/searchForm_simple.tpl"}
-						</div>
-					{/if} -->
 				</nav>
 
 			</div>
 			<div class="container-fluid ocultar">
-				<!-- <div class="pull-md-right">
-				</div> -->
 				{* User profile, login, etc, navigation menu*}
 				{if $isUserLoggedIn}
 				<h1 class="usuario">Bienvenido, {$loggedInUsername|escape}</h1>
