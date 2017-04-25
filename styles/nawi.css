@@ -706,3 +706,11 @@ h1.usuario{
 .collapse.in{
 
 }
+
+#pdfCanvasContainer{
+	height: 98%;
+}
+
+.header_view_pdf{
+	height: auto;
+}

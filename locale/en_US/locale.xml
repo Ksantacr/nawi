@@ -15,6 +15,6 @@
 
   <message key="plugins.themes.nawi.name">Tema Ñawi</message>
   <message key="plugins.themes.nawi.description">Tema para la revista ÑAWI.</message>
-  <message key="common.downloadPdf">Descargar PDF.</message>
+  <message key="common.downloadPdf">Download PDF.</message>
 
 </locale>
