@@ -571,7 +571,7 @@ h2.current_issue_title{
 	flex-direction: column;
 	-ms-align-items: center;
 	align-items: center;
-	flex: 1 1 33.33%;
+	flex: 0 1 33.33%;
 }
 .media-left{
 	display: initial;
