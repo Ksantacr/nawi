@@ -19,5 +19,7 @@
   <message key="about.onlineSubmissions.viewSubmissions">Ver tus envíos pendientes</message>
   <message key="about.onlineSubmissions.submissionActions">{$newSubmission} o {$viewSubmissions}.</message>
   <message key="navigation.archives">Volumenes</message>
+  <message key="editor.article.schedulePublication">Programar publicación</message>
   <message key="navigation.current">Call for paper</message>
+  <message key="submission.upload.proof">Subir archivo listo para publicación</message>
 </locale>
