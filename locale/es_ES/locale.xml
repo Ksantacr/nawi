@@ -15,5 +15,7 @@
 	<message key="plugins.themes.nawi.name">Tema Ñawi</message>
 	<message key="plugins.themes.nawi.description">Tema para la revista ÑAWI.</message>
   <message key="common.downloadPdf">Descargar PDF.</message>
+  <message key="user.login.registrationComplete.newSubmission">Realizar un nuevo envío</message>
+  <message key="about.onlineSubmissions.viewSubmissions">Ver tus envíos pendientes</message>
   <message key="about.onlineSubmissions.submissionActions">{$newSubmission} o {$viewSubmissions}.</message>
 </locale>

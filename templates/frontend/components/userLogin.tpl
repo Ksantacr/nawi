@@ -32,7 +32,7 @@
 		</div>
 		<div class="login">
 			<button type="submit" class="btn btn-primary">
-				{**{translate key="user.login"}*}Iniciar Sesión
+				{translate key="user.login"}
 			</button>
 		</div>
 
@@ -40,12 +40,12 @@
 			{if !$disableUserReg}
 				{url|assign:registerUrl page="user" op="register" source=$source}
 				<a class="btn btn-default register-button" href="{$registerUrl}" role="button">
-					{**{translate key="user.login.registerNewAccount"}*}Registrarse
+					{translate key="user.login.registerNewAccount"}
 				</a>
 			{/if}
 
 			<a href="{url page="login" op="lostPassword"}">
-				{**{translate key="user.login.forgotPassword"}*}Olvidé contraseña
+				{translate key="user.login.forgotPassword"}
 			</a>
 		</div>
 		<!-- <div class="checkbox">
