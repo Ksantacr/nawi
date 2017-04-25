@@ -38,9 +38,9 @@
 	}
 
 	.issues .issue-summary{
-		flex: none;
+		/*flex: none;
 		width: 48%;
-		margin: 0 1%;
+		margin: 0 1%;*/
 	}
 
 	.nawi-tabs li{
@@ -166,6 +166,13 @@
 	}
 	.container-fluid form{
 		margin-bottom: 7%;
+	}
+
+}
+@media screen and (max-width: 900px ){
+	.issues .issue-summary{
+		flex:1 1 46%;
+		margin: 0 2%;
 	}
 
 }
