@@ -294,16 +294,13 @@ ul#main-navigation >li:nth-child(1){
 	margin: 0 -15px;
 }
 
-.logo-edcom{
-	
-	/*margin: 15% auto;
-	margin-top: 5px;*/
-	width: 130px;
+.logo-edcom {
+	width: 190px;
 	opacity: 0.8;
 }
 
 .logo-espol{
-	width: 50px;
+	width: 60px;
 }
 
 .r-social, .divLogoEdcom2, .divLogoEspol2{
@@ -323,7 +320,7 @@ ul#main-navigation >li:nth-child(1){
 }
 
 .divLogoEdcom{
-	width: 150px;
+	width: 190px;
 }
 
 .divLogoEspol{
