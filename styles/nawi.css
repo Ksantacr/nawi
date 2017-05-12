@@ -294,16 +294,13 @@ ul#main-navigation >li:nth-child(1){
 	margin: 0 -15px;
 }
 
-.logo-edcom{
-	
-	/*margin: 15% auto;
-	margin-top: 5px;*/
-	width: 130px;
+.logo-edcom {
+	width: 190px;
 	opacity: 0.8;
 }
 
 .logo-espol{
-	width: 50px;
+	width: 60px;
 }
 
 .r-social, .divLogoEdcom2, .divLogoEspol2{
@@ -323,7 +320,7 @@ ul#main-navigation >li:nth-child(1){
 }
 
 .divLogoEdcom{
-	width: 150px;
+	width: 190px;
 }
 
 .divLogoEspol{
@@ -540,7 +537,8 @@ h2.current_issue_title{
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	justify-content: space-around;
+	-ms-align-items: center;
+	align-items: center;
 	-webkit-flex-wrap: wrap;
 	-moz-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
@@ -555,6 +553,7 @@ h2.current_issue_title{
 }
 .issues .issue-summary .media-body{
 	width: 100%;
+	text-align: center;
 }
 .issues .issue-summary{
 	display: -webkit-flex;
@@ -567,8 +566,9 @@ h2.current_issue_title{
 	-ms-flex-direction: column;
 	-o-flex-direction: column;
 	flex-direction: column;
-	justify-content: space-around;
-	flex: 1;
+	-ms-align-items: center;
+	align-items: center;
+	flex: 0 1 33.33%;
 }
 .media-left{
 	display: initial;
