@@ -19,7 +19,11 @@
   <message key="about.onlineSubmissions.viewSubmissions">Ver tus envíos pendientes</message>
   <message key="about.onlineSubmissions.submissionActions">{$newSubmission} o {$viewSubmissions}.</message>
   <message key="navigation.archives">Volumenes</message>
-  <message key="editor.article.schedulePublication">Programar publicación</message>
   <message key="navigation.current">Call for paper</message>
-  <message key="submission.upload.proof">Subir archivo listo para publicación</message>
+  <message key="manager.setup.imgCarousel1">Configurar imágen 1</message>
+  <message key="manager.setup.imgCarousel1Description">Puedes cambiar la primera imágen que aparece en la página principal</message>
+  <message key="manager.setup.imgCarousel2">Configurar imágen 2</message>
+  <message key="manager.setup.imgCarousel2Description">Puedes cambiar la segunda imágen que aparece en la página principal</message>
+  <message key="manager.setup.imgCarousel3">Configurar imágen 3</message>
+  <message key="manager.setup.imgCarousel3Description">Puedes cambiar la tercera imágen que aparece en la página principal</message>
 </locale>
