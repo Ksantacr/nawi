@@ -16,5 +16,11 @@
   <message key="plugins.themes.nawi.name">Tema Ñawi</message>
   <message key="plugins.themes.nawi.description">Tema para la revista ÑAWI.</message>
   <message key="common.downloadPdf">Download PDF.</message>
+  <message key="manager.setup.imgCarousel1">First Image</message>
+  <message key="manager.setup.imgCarousel1Description">Change the first image of the home page</message>
+  <message key="manager.setup.imgCarousel2">Second Image</message>
+  <message key="manager.setup.imgCarousel2Description">Change the second image of the home page</message>
+  <message key="manager.setup.imgCarousel3">Thirth Image</message>
+  <message key="manager.setup.imgCarousel3Description">Change the thirth image of the home page</message>
 
 </locale>
