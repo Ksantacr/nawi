@@ -1,9 +1,23 @@
-Theme for Ñawi magazine
+# Ñawi Theme
+## Description
 
-Steps to use:
-1. <a href ="https://github.com/Ksantacr/nawi/archive/master.zip">Download it</a>
-2. Unzip and put it in the next path : <code>/ojs/plugins/themes/&lt;here&gt;</code>
-3. Login on admin panel, then activate it on plugins.
-4. Select Nawi Theme
+Ñawi is a semiannual scientific research journal of ESPOL (Escuela Superior Politécnica del Litoral) and EDCOM (Escuela de Diseño y Comunicacion Visual) that deals with the study and reflection of Art, Design and Communication linked to the Visual, with special attention to practices in Ecuador and Latin America.
 
-<img src="https://github.com/Ksantacr/nawi/blob/master/colores.gif?raw=true" alt="Ñawi Magazine - ESPOL">
+## Installation
+
+1. Download it.
+
+1. Decompress and put it in next path: <br>
+`/ojs/plugins/themes/<here>`
+
+1. Each file inside the **slider** folder has a path, replace each file on its respective path. <br>
+Run `head -n 2 slider/<file>` to see path.
+
+1. Select Ñawi theme in the desired journal.
+
+## Recomendations
+
+* The size of the images for the slider should be **1000 x 400**.
+* The cover image for each volume should be **200 x 300**.
+
+![Ñawi](https://github.com/Ksantacr/nawi/blob/master/colores.gif)
