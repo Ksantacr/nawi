@@ -403,10 +403,11 @@ div.homepage-image img{
 	width: 100%;
 	background-color: rgba(0,0,0,0.75);
 	color:white;
-	padding: 20px;
+	padding: 15px 5px 30px;
 
 	display: block;
 	bottom:0px;
+	text-align: center;
 
 }
 .imagen-principal{
@@ -715,4 +716,8 @@ h1.usuario{
 
 .header_view_pdf{
 	height: auto;
+}
+
+.carousel-indicators {
+	bottom: -5px;
 }

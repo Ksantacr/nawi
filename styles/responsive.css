@@ -26,6 +26,9 @@
 	}
 }
 @media only screen and ( max-width: 550px ){
+	.imagen-principal figcaption {
+		display: none;
+	}
 	.media-left img{
 		max-width: 100%;
 		}
