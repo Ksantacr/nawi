@@ -44,10 +44,8 @@ Run `head -n 2 slider/<file>` to see path.
 ![Ñawi](https://github.com/Ksantacr/nawi/blob/master/colores.gif)
 
 * If you don't want to see unreadable text for example ##plugins.importexport.pubIds.displayName##. Add this lines in the next path: <br>
-`/locale/es_ES/locale.xml`
-* after
-```<locale name="es_ES" full_name="Español (España)">```
-* this
+`/locale/es_ES/locale.xml` after
+```<locale name="es_ES" full_name="Español (España)">``` this <br>
 ```
 <message key="plugins.importexport.pubIds.displayName">Módulo XML de identificadores públicos</message>
 <message key="plugins.importexport.pubIds.description">Importar y exportar identificadores públicos</message>
