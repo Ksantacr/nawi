@@ -721,3 +721,11 @@ h1.usuario{
 .carousel-indicators {
 	bottom: -5px;
 }
+
+#myCarousel {
+	width: 100%;
+}
+
+.imagen-principal img {
+	width: 100%;
+}
