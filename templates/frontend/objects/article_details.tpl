@@ -14,16 +14,41 @@
  * @uses $pubIdPlugins @todo
  *}
 <article class="article-details">
+	<div class="series lead">
+					{$issueSeries|escape}
+	</div>
 	<header>
-		<h1 class="page-header">
+		<b><h1 class="page-header">
 			{$article->getLocalizedTitle()|escape}
 			{if $article->getLocalizedSubtitle()}
 				<small>
 					{$article->getLocalizedSubtitle()|escape}
 				</small>
 			{/if}
-		</h1>
+		</h1></b>
 	</header>
+
+	
+				{if $article->getAuthors()}
+					<div class="authors">
+						{foreach from=$article->getAuthors() item=author}
+							<strong>{$author->getFullName()|escape}</strong>
+							{if $author->getLocalizedAffiliation()}
+								<div class="article-author-affilitation">
+									{$author->getLocalizedAffiliation()|escape}
+								</div>
+							{/if}
+							{if $author->getOrcid()}
+								<span class="orcid">
+									<a href="{$author->getOrcid()|escape}" target="_blank">
+										<img src="//orcid.org/sites/default/files/images/orcid_16x16.png">
+										{$author->getOrcid()|escape}
+									</a>
+								</span>
+							{/if}
+						{/foreach}
+					</div>
+				{/if}
 
 	<div class="row">
 
@@ -94,26 +119,6 @@
 				{* Screen-reader heading for easier navigation jumps *}
 				<h2 class="sr-only">{translate key="plugins.themes.bootstrap3.article.main"}</h2>
 
-				{if $article->getAuthors()}
-					<div class="authors">
-						{foreach from=$article->getAuthors() item=author}
-							<strong>{$author->getFullName()|escape}</strong>
-							{if $author->getLocalizedAffiliation()}
-								<div class="article-author-affilitation">
-									{$author->getLocalizedAffiliation()|escape}
-								</div>
-							{/if}
-							{if $author->getOrcid()}
-								<span class="orcid">
-									<a href="{$author->getOrcid()|escape}" target="_blank">
-										<img src="//orcid.org/sites/default/files/images/orcid_16x16.png">
-										{$author->getOrcid()|escape}
-									</a>
-								</span>
-							{/if}
-						{/foreach}
-					</div>
-				{/if}
 
 				{* Article abstract *}
 				{if $article->getLocalizedAbstract()}
