@@ -42,3 +42,6 @@ Run `head -n 2 slider/<file>` to see path.
 * The cover image for each volume should be **200 x 300**.
 
 ![Ñawi](https://github.com/Ksantacr/nawi/blob/master/colores.gif)
+
+* Add this lines in the next path: <br>
+`/locale/es_ES/locale.xml`
