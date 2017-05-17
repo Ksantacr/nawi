@@ -94,6 +94,11 @@
 	/*pkp_structure_main{
 		padding: 0;
 	}*/
+
+    .navbar-collapse{
+    	z-index: 30;
+    }
+
 	.logosFooter{
 		padding-top: 1em;
 	}
