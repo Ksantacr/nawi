@@ -51,9 +51,16 @@
 				
 						<img class="img-responsive" src="{$publicFilesDir}/{$homepageImage.uploadName|escape:"url"}" alt="{$homepageImageAltText|escape}">
 
-						<figcaption>
-							{$additionalHomeContent}
-						</figcaption>
+						<!--<figcaption>-->
+							{*$additionalHomeContent*}
+						<!--</figcaption>-->
+
+						{if $additionalHomeContent}
+		<figcaption>
+			{$additionalHomeContent}
+		</figcaption>
+	{/if}
+
 					</figure>
     </div>
     {if $currentJournal->_data.imgCarousel1.$currentLocale.uploadName}
@@ -142,7 +149,6 @@
 	{*if $additionalHomeContent}
 		<section class="additional_content">
 			{$additionalHomeContent}
-			
 		</section>
 	{/if*}
 

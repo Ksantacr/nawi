@@ -39,7 +39,8 @@
 {if $currentJournal->getSetting('publishingMode') != $smarty.const.PUBLISHING_MODE_NONE}
   <li>
     <a href="{url router=$smarty.const.ROUTE_PAGE page="issue" op="archive"}">
-      {translate key="navigation.archives"}
+      Volúmenes
+      {**translate key="navigation.archives"*}
     </a>
   </li>
   <li>
