@@ -45,7 +45,8 @@
 	<div class="heading">
 
 		{* Issue cover image and description*}
-		{assign var=issueCover value=$issue->getCoverImage()}
+		{*assign var=issueCover value=$issue->getCoverImage()*}
+		{assign var=issueCover value=$issue->getLocalizedCoverImageUrl()}
 		{if $issueCover}
 			<div class="nawi-portada">
 				<a class="cover" href="{url op="view" page="issue" path=$issue->getBestIssueId()}">

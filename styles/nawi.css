@@ -734,3 +734,53 @@ h1.usuario{
 .imagen-principal img {
 	width: 100%;
 }
+
+.issue_title {
+	color:#cf0274;
+	margin-bottom: 0;
+	font-size: 1.4em;
+	opacity: 0.8;
+}
+
+.main-article-title {
+	font-weight: bolder;
+	margin-top: 6px;
+	margin-bottom: 5px;
+}
+.div_autores {
+	margin-top: 0;
+}
+.autores {
+	font-weight: normal;
+	font-style: italic;
+	text-transform: capitalize;
+	font-size: 1em;
+	margin-bottom: 0 !important;
+}
+
+.panel {
+	border-color:transparent;
+	box-shadow: none;
+	margin-bottom: 0;
+}
+.panel .panel-heading {
+	background-color: transparent;
+	border-color: transparent;
+	padding: 0;
+}
+.panel .panel-body {
+	padding-left: 0;
+	padding-right: 0;
+}
+.article-sub, .panel .panel-heading  {
+	font-weight: bolder;
+	font-size: 1.3em;
+	color:#6e6e6e;
+}
+
+.article-main {
+	margin-bottom: 1em;
+}
+.article-main, .article-more-details {
+	font-size: 1.2em;
+}

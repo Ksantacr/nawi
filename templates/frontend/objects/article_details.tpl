@@ -17,22 +17,23 @@
 	<div class="series lead">
 					{$issueSeries|escape}
 	</div>
-	<header>
-		<b><h1 class="page-header">
+	<header class="page-header">
+		<h2 class="issue_title">
+				{$issue->getIssueIdentification()|strip_unsafe_html}
+			</h2>
+		<h1 class="main-article-title">
 			{$article->getLocalizedTitle()|escape}
 			{if $article->getLocalizedSubtitle()}
-				<small>
+				<span> - 
 					{$article->getLocalizedSubtitle()|escape}
-				</small>
+				</span>
 			{/if}
-		</h1></b>
-	</header>
-
-	
-				{if $article->getAuthors()}
-					<div class="authors">
+		</h1>
+		<h4 class="div_autores">
+			{if $article->getAuthors()}
+					<div class="authors autores">
 						{foreach from=$article->getAuthors() item=author}
-							<strong>{$author->getFullName()|escape}</strong>
+							<span>{$author->getFullName()|escape}</span>
 							{if $author->getLocalizedAffiliation()}
 								<div class="article-author-affilitation">
 									{$author->getLocalizedAffiliation()|escape}
@@ -49,36 +50,36 @@
 						{/foreach}
 					</div>
 				{/if}
+		</h4>
+	</header>
+
+	
+				
 
 	<div class="row">
 
-		<section class="article-sidebar col-md-4">
+		<section class="article-sidebar col-md-8">
 
 			{* Screen-reader heading for easier navigation jumps *}
 			<h2 class="sr-only">{translate key="plugins.themes.bootstrap3.article.sidebar"}</h2>
 
 			{* Article/Issue cover image *}
-			{if $article->getCoverImage() || $issue->getCoverImage()}
-				<div class="cover-image">
-					{if $article->getCoverImage()}
-						<img class="img-responsive" src="{$publicFilesDir}/{$article->getCoverImage()|escape}"{if $article->getCoverImageAltText()} alt="{$article->getCoverImageAltText()|escape}"{/if}>
-					{else}
-						<a href="{url page="issue" op="view" path=$issue->getBestIssueId()}">
-							<img class="img-responsive" src="{$publicFilesDir}/{$issue->getCoverImage()|escape}"{if $issue->getCoverImageAltText()} alt="{$issue->getCoverImageAltText()|escape}"{/if}>
-						</a>
-					{/if}
+			{*
+			{if $article->getLocalizedCoverImage() || $issue->getLocalizedCoverImage()}
+				<div class="item cover_image">
+					<div class="sub_item">
+						{if $article->getLocalizedCoverImage()}
+							<img src="{$article->getLocalizedCoverImageUrl()|escape}"{if $article->getLocalizedCoverImageAltText()} alt="{$article->getLocalizedCoverImageAltText()|escape}"{/if}>
+						{else}
+							<a href="{url page="issue" op="view" path=$issue->getBestIssueId()}">
+								<img src="{$issue->getLocalizedCoverImageUrl()|escape}"{if $issue->getLocalizedCoverImageAltText()} alt="{$issue->getLocalizedCoverImageAltText()|escape}"{/if}>
+							</a>
+						{/if}
+					</div>
 				</div>
 			{/if}
-
-			{* Article Galleys *}
-			{if $article->getGalleys()}
-				<div class="download">
-					{foreach from=$article->getGalleys() item=galley}
-						{include file="frontend/objects/galley_link.tpl" parent=$article}
-					{/foreach}
-				</div>
-			{/if}
-
+			*}
+			<!--
 			<div class="list-group">
 
 				{* Published date *}
@@ -110,7 +111,7 @@
 					{/if}
 				{/foreach}
 			</div>
-
+			-->
 		</section><!-- .article-sidebar -->
 
 		<div class="col-md-8">
@@ -122,8 +123,8 @@
 
 				{* Article abstract *}
 				{if $article->getLocalizedAbstract()}
-					<div class="article-summary" id="summary">
-						<h2>{translate key="article.abstract"}</h2>
+					<div class="article-summary article-item" id="summary">
+						<h2 class="article-sub">{translate key="article.abstract"}</h2>
 						<div class="article-abstract">
 							{$article->getLocalizedAbstract()|strip_unsafe_html|nl2br}
 						</div>
@@ -141,7 +142,18 @@
 						{$article->getLocalizedSubject()|escape}
 					</div>
 				</div>
-			{/if}				
+			{/if}	
+
+			{* Article Galleys *}
+			{if $article->getGalleys()}
+
+				<div class="download">
+					<span class="texto-competo">Texto Completo: </span>
+					{foreach from=$article->getGalleys() item=galley}
+						{include file="frontend/objects/galley_link.tpl" parent=$article}
+					{/foreach}
+				</div>
+			{/if}			
 
 				{call_hook name="Templates::Article::Main"}
 
