@@ -96,10 +96,7 @@
 	}*/
 
 
-    .navbar-collapse{
-    	z-index: 30;
-    }
-
+    
 	.logosFooter{
 		padding-top: 1em;
 	}
@@ -183,6 +180,7 @@
 
 }
 @media screen and (max-width: 900px ){
+	
 	.issues .issue-summary{
 		flex:1 1 46%;
 		margin: 0 2%;

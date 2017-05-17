@@ -248,6 +248,10 @@ ul#main-navigation >li:nth-child(1){
 	margin-bottom: 45px;
 }
 
+.navbar-collapse{
+    	z-index: 30;
+    }
+
 .login .btn-primary{
 	background-color: #0099ee;
 	border-radius: 0px;
