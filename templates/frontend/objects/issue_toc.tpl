@@ -30,6 +30,13 @@
 			<a href="#{$section.title|escape}" data-toggle="tab">{$section.title|escape}</a>
 		</li>
 		{/foreach}
+		<li>
+    <a href="{url router=$smarty.const.ROUTE_PAGE page="issue" op="archive"}">
+      Volúmenes
+      {**translate key="navigation.archives"*}
+    </a>
+  </li>
+		
 	</ul>
 	<!--Fin categorías-->
 </div>

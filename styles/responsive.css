@@ -47,8 +47,12 @@
 	}
 
 	.nawi-tabs li{
-		width: 33.3%;
+		width: 25%;
 		text-align: center;
+	}
+
+	.nav-tabs > li > a{
+		padding: 1em 0;
 	}
 
 	.nawi-revista .heading,.nawi-revista .heading +div{
