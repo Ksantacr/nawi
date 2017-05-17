@@ -466,8 +466,9 @@ h2.current_issue_title{
 	letter-spacing: 0px;
 	font-weight: bold;
 }
-.nawi-portada{
-
+.cover img {
+	width : 200px;
+	height: 300px;
 }
 .nawi-revista{
 	display: -webkit-flex;
