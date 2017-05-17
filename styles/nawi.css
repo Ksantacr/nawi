@@ -261,8 +261,9 @@ ul#main-navigation >li:nth-child(1){
 	padding: 0px;
 	background-color: transparent;
 	border-color: transparent;
-	white-space: pre-line;
+	white-space: normal;
 	text-align: left;
+	float: left;
 }
 .btn-default:hover{
 	border-radius: 0px;
