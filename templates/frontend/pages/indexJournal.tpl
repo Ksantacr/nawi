@@ -24,31 +24,31 @@
 <!-- Inicio Banner -->
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
-  <ol class="carousel-indicators">
-  	{assign var=indice value=0}
-	{if $homepageImage}
-    	<li data-target="#myCarousel" data-slide-to="{$indice}" class="active"></li>
-    	{assign var=indice value=$indice+1}
-    {/if}
-    {if $currentJournal->_data.imgCarousel1.$currentLocale.uploadName}
-    	<li data-target="#myCarousel" data-slide-to="{$indice}"></li>
-    	{assign var=indice value=$indice+1}
-    {/if}
-    {if $currentJournal->_data.imgCarousel2.$currentLocale.uploadName}
-    	<li data-target="#myCarousel" data-slide-to="{$indice}"></li>
-    	{assign var=indice value=$indice+1}
-    {/if}
-    {if $currentJournal->_data.imgCarousel3.$currentLocale.uploadName}
-    	<li data-target="#myCarousel" data-slide-to="{$indice}"></li>
-    	{assign var=indice value=$indice+1}
-    {/if}
-  </ol>
+  {**<ol class="carousel-indicators">
+  *{assign var=indice value=0}
+	*{if $homepageImage}
+  *  	<li data-target="#myCarousel" data-slide-to="{$indice}" class="active"></li>
+  *  	{assign var=indice value=$indice+1}
+  *  {/if}
+  *  {if $currentJournal->_data.imgCarousel1.$currentLocale.uploadName}
+  *  	<li data-target="#myCarousel" data-slide-to="{$indice}"></li>
+  *  	{assign var=indice value=$indice+1}
+  *  {/if}
+  *  {if $currentJournal->_data.imgCarousel2.$currentLocale.uploadName}
+  *  	<li data-target="#myCarousel" data-slide-to="{$indice}"></li>
+  *  	{assign var=indice value=$indice+1}
+  *  {/if}
+  *  {if $currentJournal->_data.imgCarousel3.$currentLocale.uploadName}
+  *  	<li data-target="#myCarousel" data-slide-to="{$indice}"></li>
+  *  	{assign var=indice value=$indice+1}
+  *  {/if}
+  </ol>*}
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
 
     <div class="item active">
       <figure class="imagen-principal">
-				
+
 						<img class="img-responsive" src="{$publicFilesDir}/{$homepageImage.uploadName|escape:"url"}" alt="{$homepageImageAltText|escape}">
 
 						<!--<figcaption>-->
@@ -66,7 +66,7 @@
     {if $currentJournal->_data.imgCarousel1.$currentLocale.uploadName}
     <div class="item">
      <figure class="imagen-principal">
-				
+
 						<img class="img-responsive" src="{$publicFilesDir}/{$currentJournal->_data.imgCarousel1.$currentLocale.uploadName|escape:"url"}" alt="{$homepageImageAltText|escape}">
 					</figure>
     </div>
@@ -74,7 +74,7 @@
     {if $currentJournal->_data.imgCarousel2.$currentLocale.uploadName}
     <div class="item">
       <figure class="imagen-principal">
-				
+
 						<img class="img-responsive" src="{$publicFilesDir}/{$currentJournal->_data.imgCarousel2.$currentLocale.uploadName|escape:"url"}" alt="">
 					</figure>
     </div>
@@ -82,7 +82,7 @@
     {if $currentJournal->_data.imgCarousel3.$currentLocale.uploadName}
     <div class="item">
       <figure class="imagen-principal">
-				
+
 						<img class="img-responsive" src="{$publicFilesDir}/{$currentJournal->_data.imgCarousel3.$currentLocale.uploadName|escape:"url"}" alt="">
 					</figure>
     </div>
@@ -163,4 +163,3 @@
 
 
 {include file="frontend/components/footer.tpl"}
-
