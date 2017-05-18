@@ -29,14 +29,7 @@
 		<li>
 			<a href="#{$section.title|escape}" data-toggle="tab">{$section.title|escape}</a>
 		</li>
-		{/foreach}
-		<li>
-    <a href="{url router=$smarty.const.ROUTE_PAGE page="issue" op="archive"}">
-      Volúmenes
-      {**translate key="navigation.archives"*}
-    </a>
-  </li>
-		
+		{/foreach}		
 	</ul>
 	<!--Fin categorías-->
 </div>
@@ -120,11 +113,11 @@
 	<!-- Contenido de las categorías (Artículos)-->
 	<div class="tab-content" id="jfs">
 		{foreach name=sections from=$publishedArticles item=section}
-		
+
 		<div class="tab-pane fade" id="{$section.title|escape}">
 			<div class="media-list">
 				{foreach from=$section.articles item=article}
-							
+
 					{include file="frontend/objects/article_summary.tpl"}
 
 				{/foreach}

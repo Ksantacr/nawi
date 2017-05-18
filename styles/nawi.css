@@ -10,9 +10,9 @@
 /*fuente principal*/
 @font-face {
   font-family: 'TwCen';
-  src: url('fonts/TwCenMT-Regular.eot?#iefix') format('embedded-opentype'), 
-   url('fonts/TwCenMT-Regular.woff') format('woff'), 
-   url('fonts/TwCenMT-Regular.ttf')  format('truetype'), 
+  src: url('fonts/TwCenMT-Regular.eot?#iefix') format('embedded-opentype'),
+   url('fonts/TwCenMT-Regular.woff') format('woff'),
+   url('fonts/TwCenMT-Regular.ttf')  format('truetype'),
    url('fonts/TwCenMT-Regular.svg#TwCenMT-Regular') format('svg');
   font-weight: normal;
   font-style: normal;
@@ -137,7 +137,7 @@ header.navbar {
 	-ms-flex-direction: column;
 	-o-flex-direction: column;
 	flex-direction: column;
-	
+
 	justify-content: space-around;
 	min-height: 100vh;
 	/*min-width: 200px;**/
@@ -223,7 +223,7 @@ header .container-fluid{
 	-o-flex-direction: column;
 	flex-direction: column;
 	text-align: center;
-	
+
 	width: 185px;
 }
 ul#main-navigation >li{
@@ -404,7 +404,7 @@ div.homepage-image img{
 	display: -o-flex;
 	display: flex;
 	position: absolute;
-	
+
 	width: 100%;
 	background-color: rgba(0,0,0,0.75);
 	color:white;
@@ -426,9 +426,6 @@ div.homepage-image img{
 	margin-bottom: 0;
 }
 
-.journal-description{
-	font-style: italic;
-}
 
 .current_issue header{
 	margin:0;
@@ -468,7 +465,6 @@ h2.current_issue_title{
 }
 .cover img {
 	width : 200px;
-	height: 300px;
 }
 .nawi-revista{
 	display: -webkit-flex;
@@ -587,18 +583,23 @@ h2.current_issue_title{
 	font-size: 16px;
 }
 .issues .issue-summary img{
-	max-width: 160px;
+	width: 200px;
 }
 .issues .issue-summary img:hover{
 	/*opacity: 0.9;*/
 }
+
+.media-left img{
+  max-width: none;
+}
+
 .obj_galley_link{
 	padding: 0 0.4em;
 	color: #007ab2;
 	text-decoration: none;
 }
 .galleys_links li{
-	/*padding:0 2px;*/ 
+	/*padding:0 2px;*/
 }
 	width: 35%;
 }
@@ -649,10 +650,6 @@ h2.current_issue_title{
 	padding: 0;
 }
 
-.media-heading{
-	margin-bottom: 25px;
-}
-
 h3.media-heading .galleys_links a{
 	//color:#2980b9;
 	text-decoration: none;
@@ -681,13 +678,13 @@ input.buscar::-webkit-input-placeholder {
    font-style: italic;
 }
 input.buscar:-moz-placeholder {
-   font-style: italic;  
+   font-style: italic;
 }
 input.buscar::-moz-placeholder {
-   font-style: italic;  
+   font-style: italic;
 }
-input.buscar:-ms-input-placeholder {  
-   font-style: italic; 
+input.buscar:-ms-input-placeholder {
+   font-style: italic;
 }
 .no-wrap{
 	flex-wrap:nowrap;
