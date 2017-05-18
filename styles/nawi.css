@@ -408,7 +408,7 @@ div.homepage-image img{
 	width: 100%;
 	background-color: rgba(0,0,0,0.75);
 	color:white;
-	padding: 15px 5px 30px;
+	padding: 15px 50px 0px;
 
 	display: block;
 	bottom:0px;
@@ -426,6 +426,9 @@ div.homepage-image img{
 	margin-bottom: 0;
 }
 
+.journal-description{
+  max-width: 100%;
+}
 
 .current_issue header{
 	margin:0;
