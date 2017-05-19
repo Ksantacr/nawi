@@ -33,6 +33,7 @@
 	</ul>
   {* Full-issue galleys *}
 {if $issueGalleys && $hasAccess}
+<div class="complete_number">
     <h2>
       {translate key="issue.fullIssue"}
     </h2>
@@ -43,6 +44,7 @@
         </li>
       {/foreach}
     </ul>
+</div>
 {/if}
 	<!--Fin categorías-->
 </div>

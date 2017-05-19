@@ -790,3 +790,14 @@ h1.usuario{
 .article-main, .article-more-details {
 	font-size: 1.2em;
 }
+
+.complete_number{
+  margin-top: 20px;
+}
+
+.complete_number > h2{
+    float: left;
+    margin-top: 0;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
