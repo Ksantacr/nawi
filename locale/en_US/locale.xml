@@ -21,6 +21,6 @@
   <message key="manager.setup.imgCarousel2">Second image</message>
   <message key="manager.setup.imgCarousel2Description">Change the second image of the home page</message>
   <message key="manager.setup.imgCarousel3">Thirth image</message>
-  <message key="manager.setup.imgCarousel3Description">Change the thirth image of the home page</message>
+  <message key="manager.setup.imgCarousel3Description">Change the third image of the home page</message>
 
 </locale>
