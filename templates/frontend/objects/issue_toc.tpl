@@ -29,8 +29,21 @@
 		<li>
 			<a href="#{$section.title|escape}" data-toggle="tab">{$section.title|escape}</a>
 		</li>
-		{/foreach}		
+		{/foreach}
 	</ul>
+  {* Full-issue galleys *}
+{if $issueGalleys && $hasAccess}
+    <h2>
+      {translate key="issue.fullIssue"}
+    </h2>
+    <ul class="galleys_links">
+      {foreach from=$issueGalleys item=galley}
+        <li>
+          {include file="frontend/objects/galley_link.tpl" parent=$issue}
+        </li>
+      {/foreach}
+    </ul>
+{/if}
 	<!--Fin categorías-->
 </div>
 </div>

@@ -24,7 +24,7 @@
 		<h1 class="main-article-title">
 			{$article->getLocalizedTitle()|escape}
 			{if $article->getLocalizedSubtitle()}
-				<span> - 
+				<span> -
 					{$article->getLocalizedSubtitle()|escape}
 				</span>
 			{/if}
@@ -53,8 +53,8 @@
 		</h4>
 	</header>
 
-	
-				
+
+
 
 	<div class="row">
 
@@ -142,7 +142,7 @@
 						{$article->getLocalizedSubject()|escape}
 					</div>
 				</div>
-			{/if}	
+			{/if}
 
 			{* Article Galleys *}
 			{if $article->getGalleys()}
@@ -153,7 +153,7 @@
 						{include file="frontend/objects/galley_link.tpl" parent=$article}
 					{/foreach}
 				</div>
-			{/if}			
+			{/if}
 
 				{call_hook name="Templates::Article::Main"}
 
@@ -164,7 +164,7 @@
 				{* Screen-reader heading for easier navigation jumps *}
 				<h2 class="sr-only">{translate key="plugins.themes.bootstrap3.article.details"}</h2>
 
-				
+
 
 				{* PubIds (requires plugins) *}
 				{foreach from=$pubIdPlugins item=pubIdPlugin}
