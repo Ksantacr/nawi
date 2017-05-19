@@ -5,10 +5,10 @@
 
 <div class="logos container-fluid">
 				<div class="divLogoEdcom">
-					<a href="http://www.espol.edu.ec/" target="_blank"><img src="{$baseUrl}/plugins/themes/nawi/images/logo_edcom.png" alt="{$applicationName|escape}" title="{$applicationName|escape}" class="logo-edcom"/>	</a>
+					<a href="http://www.edcom.espol.edu.ec/" target="_blank"><img src="{$baseUrl}/plugins/themes/nawi/images/logo_edcom.png" alt="{$applicationName|escape}" title="{$applicationName|escape}" class="logo-edcom"/>	</a>
 				</div>
 				<div class="divLogoEspol">
-					<a href="http://www.edcom.espol.edu.ec/" target="_blank"><img src="{$baseUrl}/plugins/themes/nawi/images/logo_espol.gif" alt="{$applicationName|escape}" title="{$applicationName|escape}" class="logo-espol"/>	</a>
+					<a href="http://www.espol.edu.ec/" target="_blank"><img src="{$baseUrl}/plugins/themes/nawi/images/logo_espol.gif" alt="{$applicationName|escape}" title="{$applicationName|escape}" class="logo-espol"/>	</a>
 				</div>
 
 				
