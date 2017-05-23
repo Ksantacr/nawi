@@ -133,16 +133,7 @@
 
 				{* Keywords *}
 				{* @todo keywords not yet implemented *}
-				{if $article->getLocalizedSubject()}
-				<div class="item subject">
-					<h3 class="label">
-						{translate key="article.subject"}
-					</h3>
-					<div class="value">
-						{$article->getLocalizedSubject()|escape}
-					</div>
-				</div>
-			{/if}
+				
 
 			{* Article Galleys *}
 			{if $article->getGalleys()}
