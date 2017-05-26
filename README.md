@@ -43,18 +43,8 @@ Run `head -n 2 slider/<file>` to see path.
 
 ![Ñawi](https://github.com/Ksantacr/nawi/blob/master/colores.gif)
 
-* If you don't want to see unreadable text for example ** ##plugins.importexport.pubIds.displayName## **. Add this lines in the next path: <br>
-`/locale/es_ES/locale.xml` after
-```<locale name="es_ES" full_name="Español (España)">``` this <br>
-```
-<message key="plugins.importexport.pubIds.displayName">Módulo XML de identificadores públicos</message>
-<message key="plugins.importexport.pubIds.description">Importar y exportar identificadores públicos</message>
-```
+* If you don't want to see unreadable text for example ** ##plugins.importexport.pubIds.displayName## **, especially in Spanish. Move the locale.zip file in this repository to: <br>
+`/` after
 
-* Also in the path: <br>
-`/locale/es_ES/submission.xml` after
-```<locale name="es_ES" full_name="Español (España)">``` this <br>
-```
-
-<message key="submission.submit.copyrightNoticeAgreementLabel">Reconocer la declaración de derechos de autor</message>
-<message key="submission.submit.submissionLocaleDescription">Se aceptan envíos en varios idiomas. Elija el idioma principal del envío desde el menú desplegable de abajo.</message>
+* Delete the locale folder and unzip locale.zip file <br>
+If you don't have problems with unreadeable text, you could just remove locale.zip file
