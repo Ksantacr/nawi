@@ -44,7 +44,6 @@ Run `head -n 2 slider/<file>` to see path.
 ![Ñawi](https://github.com/Ksantacr/nawi/blob/master/colores.gif)
 
 * If you don't want to see unreadable text for example ** ##plugins.importexport.pubIds.displayName## **, especially in Spanish. Move the locale.zip file in this repository to: <br>
-`/` after
-
-* Delete the locale folder and unzip locale.zip file <br>
+`/` 
+Then, delete the locale folder and unzip locale.zip file <br>
 If you don't have problems with unreadeable text, you could just remove locale.zip file
