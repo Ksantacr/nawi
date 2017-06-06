@@ -60,7 +60,7 @@
 									<label>
 										{assign var="userGroupId" value=$userGroup->getId()}
 										<input type="checkbox" name="reviewerGroup[{$userGroupId}]" value="1"{if in_array($userGroupId, $userGroupIds)} checked="checked"{/if}>
-										{translate key="user.reviewerPrompt.userGroup" userGroup=$userGroup->getLocalizedName()}
+										{translate key="user.reviewerPrompt.userGroup"} de {translate key="default.groups.name.externalReviewer"} externo.
 									</label>
 								{/if}
 							{/foreach}
